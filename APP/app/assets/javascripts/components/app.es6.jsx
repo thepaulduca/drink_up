@@ -2,7 +2,7 @@ class App extends React.Component {
   render(){
     return(
       <div>
-        <p>Here is some words</p>
+        <h1>HELLO WORLD</h1>
       </div>
     )
   }
