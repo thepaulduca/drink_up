@@ -1,7 +1,7 @@
 class Sector extends React.Component {
   render(){
     return(
-      <div className="sec"><span className={this.props.data}></span></div>
+      <div name={this.props.data.gameName} className="sec"><span className={this.props.data.gameIcon}></span></div>
     )
   }
 }

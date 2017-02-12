@@ -1,5 +1,5 @@
 //set default degree (360*5)
-console.log("reading this")
+// console.log("reading this")
 
 var degree = 1800;
 //number of clicks = 0
@@ -33,6 +33,15 @@ $(document).ready(function(){
 				c++;
 				if (c === n) {
 					clearInterval(interval);
+          var selected = t.find('span');
+          $("#wheel .sec span").each(function(){
+            var currentSector = $(this);
+            if(currentSector.offset().top < selected.offset().top) {
+              selected = currentSector;
+            }
+          });
+          console.log(selected.parent().attr('name'));
+          console.log(selected.attr('class'));
 				}
 
 				var aoY = t.offset().top;
@@ -45,7 +54,6 @@ $(document).ready(function(){
 				that it has a 30 degree angle and therefore,
 				exactly aligned with the spin btn*/
 				if(aoY < 23.89){
-					// console.log('<<<<<<<<');
 					$('#spin').addClass('spin');
 					setTimeout(function () {
 						$('#spin').removeClass('spin');
@@ -58,7 +66,6 @@ $(document).ready(function(){
 			});
 
 			noY = t.offset().top;
-
 		});
 	});
 

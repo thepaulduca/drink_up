@@ -1,7 +1,34 @@
 
 class Wheel extends React.Component {
   render(){
-    let games = ["fa fa-bell-o", "fa fa-comment-o", "fa fa-smile-o", "fa fa-heart-o", "fa fa-star-o", "fa fa-lightbulb-o"]
+    // We'll probably have games database, and get games from there with an ajax, for now I'll hardcode some stuff for practice
+    let games = [
+      {
+        gameName: "Hot or Not",
+        gameIcon: "fa fa-bell-o"
+      },
+      {
+        gameName: "Truth or Dare",
+        gameIcon: "fa fa-comment-o"
+      },
+      {
+        gameName: "Never have I ever",
+        gameIcon: "fa fa-smile-o"
+      },
+      {
+        gameName: "Trivia",
+        gameIcon: "fa fa-heart-o"
+      },
+      {
+        gameName: "Some more stuff",
+        gameIcon: "fa fa-star-o"
+      },
+      {
+        gameName: "Go directly to jail, do NOT pass go",
+        gameIcon: "fa fa-lightbulb-o"
+      }
+    ]
+
     return(
       <div id="wheel">
         <div id="inner-wheel">
@@ -11,7 +38,7 @@ class Wheel extends React.Component {
             <div id="inner-spin"></div>
         </div>
 
-        <div id="shine">Shine</div>
+        <div id="shine"></div>
       </div>
     )
   }
