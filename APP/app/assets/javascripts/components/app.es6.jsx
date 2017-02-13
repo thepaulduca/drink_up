@@ -3,7 +3,6 @@ class App extends React.Component {
     return(
       <div id="wrapper">
             <Wheel />
-            <div id="txt"></div>
       </div>
     )
   }
