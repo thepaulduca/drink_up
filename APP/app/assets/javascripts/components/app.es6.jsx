@@ -1,29 +1,30 @@
 class App extends React.Component {
+  constructor(){
+    super();
+    this.state = {
+      activeGame: null
+    }
+  }
+
+  activeGameHandler(newGame){
+    this.setState({
+      activeGame: newGame
+    })
+  }
+
   render(){
-    return(
-      <div id="wrapper">
-
-            <div id="wheel">
-
-                <div id="inner-wheel">
-                    <div className="sec"><span className="fa fa-bell-o"></span></div>
-                    <div className="sec"><span className="fa fa-comment-o"></span></div>
-                    <div className="sec"><span className="fa fa-smile-o"></span></div>
-                    <div className="sec"><span className="fa fa-heart-o"></span></div>
-                    <div className="sec"><span className="fa fa-star-o"></span></div>
-                    <div className="sec"><span className="fa fa-lightbulb-o"></span></div>
-                </div>
-
-                <div id="spin">
-                    <div id="inner-spin"></div>
-                </div>
-
-                <div id="shine"></div>
-            </div>
-
-
-            <div id="txt"></div>
-      </div>
-    )
+    let activeGame = this.state.activeGame
+    if(activeGame){
+      return(
+        <Game game={activeGame} gameHandler={this.activeGameHandler.bind(this)}/>
+      )
+    } else {
+      return(
+        <div id="wrapper">
+          <Wheel gameHandler={this.activeGameHandler.bind(this)}/>
+          <div id="txt"></div>
+        </div>
+      )
+    }
   }
 }

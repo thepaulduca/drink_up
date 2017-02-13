@@ -22,7 +22,7 @@ a{
 }
 
 #txt{
-	color:#eaeaea;
+	color: red;
 }
 
 
@@ -81,7 +81,7 @@ a{
 	border-color: #16a085 transparent;
 }
 #wheel div.sec:nth-child(2){
-	transform: rotate(120deg);
+	/*transform: rotate(120deg);*/
 	-webkit-transform: rotate(120deg);
 	-moz-transform: rotate(120deg);
 	-o-transform: rotate(120deg);
@@ -218,6 +218,7 @@ a{
 
 
 #shine{
+	color: orange;
 	width:250px;
 	height:250px;
 	position:absolute;
