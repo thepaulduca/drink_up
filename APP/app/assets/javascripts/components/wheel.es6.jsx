@@ -3,10 +3,7 @@ class Wheel extends React.Component {
     return(
       <div id="wheel">
           <InnerWheel/>
-          <div id="spin">
-              <div id="inner-spin"></div>
-          </div>
-          <div id="shine"></div>
+          <Spinner/>
       </div>
     )
   }
