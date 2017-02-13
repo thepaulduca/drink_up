@@ -16,14 +16,14 @@ class App extends React.Component {
     let activeGame = this.state.activeGame
     if(activeGame){
       return(
-        <div id="wrapper">
-          <Wheel/>
-          <div id="txt"></div>
-        </div>
+        <Game game={activeGame} gameHandler={this.activeGameHandler.bind(this)}/>
       )
     } else {
       return(
-        <Game game={activeGame}/>
+        <div id="wrapper">
+          <Wheel gameHandler={this.activeGameHandler.bind(this)}/>
+          <div id="txt"></div>
+        </div>
       )
     }
   }
