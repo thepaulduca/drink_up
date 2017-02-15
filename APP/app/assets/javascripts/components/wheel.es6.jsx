@@ -17,7 +17,8 @@ constructor(props) {
    innerWheel.style.transform = 'rotate(' + degree + 'deg)'
  }
 
- // logic for finding which pieace is being pointed to 
+
+ // logic for finding which pieace is being pointed to
  //  $("#wheel .sec span").each(function(){
  //    var currentSector = $(this);
  //    if(currentSector.offset().top < selected.offset().top) {
