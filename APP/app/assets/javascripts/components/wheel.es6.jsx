@@ -14,17 +14,25 @@ constructor(props) {
    clicks = this.state.clicks;
    var degree = (1800 * clicks) + (Math.floor(Math.random() * 360)+ 1);
    var innerWheel = document.getElementById("inner-wheel");
-   innerWheel.style.transform = 'rotate(' + degree + 'deg)'
+   innerWheel.style.transform = 'rotate(' + degree + 'deg)';
+   setTimeout(this.findWinner.bind(this), 6000);
  }
 
- // logic for finding which pieace is being pointed to 
- //  $("#wheel .sec span").each(function(){
- //    var currentSector = $(this);
- //    if(currentSector.offset().top < selected.offset().top) {
- //      selected = currentSector;
- //    }
- //  });
- //  this.props.gameHandler(selected.parent().attr('name'));
+ findWinner() {
+   var sectors = document.getElementsByClassName('sec'),
+       l = sectors.length,
+       selected = sectors[0].childNodes[0];
+
+   for(var i = 1; i < l; i++){
+     var currentSector = sectors[i].childNodes[0];
+         currentTop = $(currentSector).offset().top;
+         selectedTop = $(selected).offset().top;
+     if(currentTop < selectedTop) {
+       selected = currentSector;
+     }
+   }
+   this.props.gameHandler(selected.parentNode.getAttribute('name'));
+ }
 
 
   render(){
