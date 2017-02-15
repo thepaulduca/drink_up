@@ -34,7 +34,6 @@ constructor(props) {
    this.props.gameHandler(selected.parentNode.getAttribute('name'));
  }
 
-
   render(){
 
     let games = [
