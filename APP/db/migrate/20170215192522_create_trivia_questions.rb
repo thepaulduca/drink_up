@@ -4,7 +4,6 @@ class CreateTriviaQuestions < ActiveRecord::Migration[5.0]
       t.string :category
       t.string :question
       t.integer :correct_answer
-      t.integer :trivia_game_id
       t.integer :trivia_answer_id
       t.timestamps
     end

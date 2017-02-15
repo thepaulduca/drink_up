@@ -18,14 +18,6 @@ ActiveRecord::Schema.define(version: 20170215192533) do
   create_table "trivia_answers", force: :cascade do |t|
     t.string   "answer"
     t.integer  "trivia_question_id"
-    t.integer  "trivia_game_id"
-    t.datetime "created_at",         null: false
-    t.datetime "updated_at",         null: false
-  end
-
-  create_table "trivia_games", force: :cascade do |t|
-    t.integer  "trivia_question_id"
-    t.integer  "trivia_answer_id"
     t.datetime "created_at",         null: false
     t.datetime "updated_at",         null: false
   end
@@ -34,7 +26,6 @@ ActiveRecord::Schema.define(version: 20170215192533) do
     t.string   "category"
     t.string   "question"
     t.integer  "correct_answer"
-    t.integer  "trivia_game_id"
     t.integer  "trivia_answer_id"
     t.datetime "created_at",       null: false
     t.datetime "updated_at",       null: false
