@@ -25,7 +25,6 @@ ActiveRecord::Schema.define(version: 20170215192533) do
   create_table "trivia_questions", force: :cascade do |t|
     t.string   "category"
     t.string   "question"
-    t.integer  "correct_answer"
     t.integer  "trivia_answer_id"
     t.datetime "created_at",       null: false
     t.datetime "updated_at",       null: false

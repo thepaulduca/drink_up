@@ -1,3 +1,3 @@
 class TriviaAnswer < ApplicationRecord
-  has_one :trivia_question
+  belongs_to :trivia_question, class_name: 'TriviaQuestion'
 end
