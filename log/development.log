@@ -1,0 +1,1219 @@
+Started GET "/" for 127.0.0.1 at 2017-02-16 13:51:01 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (6.4ms)
+Completed 500 Internal Server Error in 4180ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (SyntaxError: unknown: Line 3: 'super.*' is not allowed before super()
+  1 | class Game extends React.Component {
+  2 |   constructor() {
+> 3 |     super;
+    |     ^
+  4 |     this.state = {
+  5 |       question: "",
+  6 |       Choises: []):
+    4:     <title>A</title>
+    5:     <%= csrf_meta_tags %>
+    6: 
+    7:     <%= stylesheet_link_tag    'application', media: 'all' %>
+    8:     <%= javascript_include_tag 'application' %>
+    9:     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+   10:   </head>
+  
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__1842123663170915617_47154397797960'
+  Rendering /home/insane/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /home/insane/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/insane/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (8.9ms)
+  Rendering /home/insane/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/insane/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendering /home/insane/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/insane/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/insane/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (43.0ms)
+Started GET "/" for 127.0.0.1 at 2017-02-16 13:51:19 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.2ms)
+Completed 500 Internal Server Error in 5005ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (SyntaxError: unknown: Line 3: 'super.*' is not allowed before super()
+  1 | class Trivia extends React.Component {
+  2 |   constructor() {
+> 3 |     super;
+    |     ^
+  4 |     this.state = {
+  5 |       question: "",
+  6 |       Choises: []):
+    4:     <title>A</title>
+    5:     <%= csrf_meta_tags %>
+    6: 
+    7:     <%= stylesheet_link_tag    'application', media: 'all' %>
+    8:     <%= javascript_include_tag 'application' %>
+    9:     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+   10:   </head>
+  
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__1842123663170915617_69908008766940'
+  Rendering /home/insane/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /home/insane/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/insane/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (12.6ms)
+  Rendering /home/insane/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/insane/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.2ms)
+  Rendering /home/insane/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/insane/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/insane/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (42.4ms)
+Started GET "/" for 127.0.0.1 at 2017-02-16 13:51:43 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 3030ms (Views: 3028.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-16 13:53:45 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 4171ms (Views: 4170.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-16 13:54:15 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 1489ms (Views: 1487.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-16 13:56:16 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 1590ms (Views: 1588.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-16 13:56:43 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 1549ms (Views: 1547.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-16 13:57:04 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 1603ms (Views: 1602.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-16 13:58:19 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 1577ms (Views: 1575.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-16 13:58:49 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 1549ms (Views: 1547.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-16 14:01:46 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.1ms)
+Completed 500 Internal Server Error in 1123ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (SyntaxError: unknown: Unexpected token (37:6)
+  35 |     return(
+  36 |       <h1>{this.state.question}?</h1>
+> 37 |       {this.state.choices.map((choice, i) => <p><span>i</span><span>{choice}</span></p>)}
+     |       ^
+  38 |     )
+  39 |   }
+  40 | }):
+     5:     <%= csrf_meta_tags %>
+     6: 
+     7:     <%= stylesheet_link_tag    'application', media: 'all' %>
+     8:     <%= javascript_include_tag 'application' %>
+     9:     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    10:   </head>
+    11: 
+  
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb__1842123663170915617_47154410256540'
+  Rendering /home/insane/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /home/insane/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/insane/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (8.6ms)
+  Rendering /home/insane/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/insane/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendering /home/insane/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/insane/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/insane/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (35.6ms)
+Started GET "/" for 127.0.0.1 at 2017-02-16 14:02:06 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 1646ms (Views: 1645.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-16 14:03:48 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 1583ms (Views: 1581.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-16 14:04:46 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 1579ms (Views: 1577.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-16 14:05:12 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 1606ms (Views: 1604.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-16 17:04:48 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 2912ms (Views: 2910.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-16 17:05:19 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 1549ms (Views: 1548.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-16 17:06:39 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 1541ms (Views: 1538.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-16 17:07:15 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 1510ms (Views: 1509.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-16 17:08:03 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 1624ms (Views: 1622.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-16 17:11:39 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 2873ms (Views: 2871.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-16 17:54:10 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 1619ms (Views: 1618.4ms | ActiveRecord: 0.0ms)
+
+
+  [1m[36mActiveRecord::SchemaMigration Load (17.9ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", :environment]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", :environment]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", :environment]]
+  [1m[35m (260.3ms)[0m  [1m[35mDROP DATABASE IF EXISTS "project_development"[0m
+  [1m[35m (219.5ms)[0m  [1m[35mDROP DATABASE IF EXISTS "project_test"[0m
+  [1m[35m (1044.3ms)[0m  [1m[35mCREATE DATABASE "project_development" ENCODING = 'utf8'[0m
+  [1m[35m (733.4ms)[0m  [1m[35mCREATE DATABASE "project_test" ENCODING = 'utf8'[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (68.4ms)[0m  [1m[35mCREATE TABLE "trivia_answers" ("id" serial primary key, "answer" character varying, "trivia_question_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (72.6ms)[0m  [1m[35mCREATE TABLE "trivia_questions" ("id" serial primary key, "category" character varying, "question" character varying, "trivia_answer_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (64.0ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying PRIMARY KEY)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (6.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES ('20170215192533')[0m
+  [1m[35m (8.1ms)[0m  [1m[32mINSERT INTO schema_migrations (version) VALUES
+('20170215192522');
+
+[0m
+  [1m[35m (72.7ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.8ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", 2017-02-17 04:14:03 UTC], ["updated_at", 2017-02-17 04:14:03 UTC]]
+  [1m[35m (8.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (82.2ms)[0m  [1m[35mCREATE TABLE "trivia_answers" ("id" serial primary key, "answer" character varying, "trivia_question_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (72.4ms)[0m  [1m[35mCREATE TABLE "trivia_questions" ("id" serial primary key, "category" character varying, "question" character varying, "trivia_answer_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (72.6ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying PRIMARY KEY)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (6.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES ('20170215192533')[0m
+  [1m[35m (8.1ms)[0m  [1m[32mINSERT INTO schema_migrations (version) VALUES
+('20170215192522');
+
+[0m
+  [1m[35m (71.6ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.8ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", 2017-02-17 04:14:03 UTC], ["updated_at", 2017-02-17 04:14:03 UTC]]
+  [1m[35m (9.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "trivia_questions" ("category", "question", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["category", "sports"], ["question", "What is the name of the Super Bowl trophy?"], ["created_at", 2017-02-17 04:14:03 UTC], ["updated_at", 2017-02-17 04:14:03 UTC]]
+  [1m[35m (12.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "trivia_answers" ("answer", "trivia_question_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["answer", "The Lombardi Trophy"], ["trivia_question_id", 1], ["created_at", 2017-02-17 04:14:03 UTC], ["updated_at", 2017-02-17 04:14:03 UTC]]
+  [1m[35m (13.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "trivia_answers" ("answer", "trivia_question_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["answer", "The Champion's Trophy"], ["trivia_question_id", 1], ["created_at", 2017-02-17 04:14:03 UTC], ["updated_at", 2017-02-17 04:14:03 UTC]]
+  [1m[35m (5.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTriviaQuestion Load (0.9ms)[0m  [1m[34mSELECT "trivia_questions".* FROM "trivia_questions"[0m
+  [1m[36mTriviaQuestion Load (0.7ms)[0m  [1m[34mSELECT  "trivia_questions".* FROM "trivia_questions" ORDER BY "trivia_questions"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mTriviaAnswer Load (0.7ms)[0m  [1m[34mSELECT "trivia_answers".* FROM "trivia_answers" WHERE "trivia_answers"."trivia_question_id" = $1[0m  [["trivia_question_id", 1]]
+  [1m[36mTriviaAnswer Load (0.6ms)[0m  [1m[34mSELECT  "trivia_answers".* FROM "trivia_answers" WHERE "trivia_answers"."trivia_question_id" = $1 LIMIT $2[0m  [["trivia_question_id", 1], ["LIMIT", 1]]
+Started GET "/" for 127.0.0.1 at 2017-02-16 23:17:31 -0500
+Started GET "/" for 127.0.0.1 at 2017-02-16 23:17:31 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (2.7ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (14.7ms)
+  Rendered welcome/index.html.erb within layouts/application (11.9ms)
+Completed 200 OK in 1669ms (Views: 1666.3ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 1753ms (Views: 1751.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/random_trivia_question" for 127.0.0.1 at 2017-02-16 23:22:38 -0500
+  
+ArgumentError (Missing :controller key on routes definition, please check your routes.):
+  
+config/routes.rb:5:in `block in <top (required)>'
+config/routes.rb:1:in `<top (required)>'
+  Rendering /home/insane/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/insane/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/insane/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (9.4ms)
+  Rendering /home/insane/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/insane/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.8ms)
+  Rendering /home/insane/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/insane/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /home/insane/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (44.8ms)
+Started GET "/random_trivia_question" for 127.0.0.1 at 2017-02-16 23:23:21 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/random_trivia_question"):
+  
+actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.7.0) lib/puma/configuration.rb:226:in `call'
+puma (3.7.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.7.0) lib/puma/server.rb:415:in `process_client'
+puma (3.7.0) lib/puma/server.rb:275:in `block in run'
+puma (3.7.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /home/insane/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home/insane/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/insane/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered collection of /home/insane/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [2 times] (24.2ms)
+  Rendered /home/insane/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (46.4ms)
+  Rendering /home/insane/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/insane/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.1ms)
+  Rendered /home/insane/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (112.7ms)
+Started GET "/trivia_question" for 127.0.0.1 at 2017-02-16 23:23:37 -0500
+Processing by TriviaQuestionController#random_trivia_question as HTML
+Completed 406 Not Acceptable in 19ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::UnknownFormat (TriviaQuestionController#random_trivia_question is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+actionpack (5.0.1) lib/action_controller/metal/implicit_render.rb:56:in `default_render'
+actionpack (5.0.1) lib/action_controller/metal/basic_implicit_render.rb:4:in `block in send_action'
+actionpack (5.0.1) lib/action_controller/metal/basic_implicit_render.rb:4:in `tap'
+actionpack (5.0.1) lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+actionpack (5.0.1) lib/abstract_controller/base.rb:188:in `process_action'
+actionpack (5.0.1) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.0.1) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+activesupport (5.0.1) lib/active_support/callbacks.rb:126:in `call'
+activesupport (5.0.1) lib/active_support/callbacks.rb:506:in `block (2 levels) in compile'
+activesupport (5.0.1) lib/active_support/callbacks.rb:455:in `call'
+activesupport (5.0.1) lib/active_support/callbacks.rb:101:in `__run_callbacks__'
+activesupport (5.0.1) lib/active_support/callbacks.rb:750:in `_run_process_action_callbacks'
+activesupport (5.0.1) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.1) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.0.1) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.0.1) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.0.1) lib/active_support/notifications.rb:164:in `block in instrument'
+activesupport (5.0.1) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.0.1) lib/active_support/notifications.rb:164:in `instrument'
+actionpack (5.0.1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.0.1) lib/action_controller/metal/params_wrapper.rb:248:in `process_action'
+activerecord (5.0.1) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+actionpack (5.0.1) lib/abstract_controller/base.rb:126:in `process'
+actionview (5.0.1) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.0.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (5.0.1) lib/action_controller/metal.rb:262:in `dispatch'
+actionpack (5.0.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (5.0.1) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.0.1) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.1) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.1) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.1) lib/action_dispatch/routing/route_set.rb:725:in `call'
+rack (2.0.1) lib/rack/etag.rb:25:in `call'
+rack (2.0.1) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.1) lib/rack/head.rb:12:in `call'
+rack (2.0.1) lib/rack/session/abstract/id.rb:222:in `context'
+rack (2.0.1) lib/rack/session/abstract/id.rb:216:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.0.1) lib/active_record/migration.rb:553:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.1) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.1) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.1) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.1) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.7.0) lib/puma/configuration.rb:226:in `call'
+puma (3.7.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.7.0) lib/puma/server.rb:415:in `process_client'
+puma (3.7.0) lib/puma/server.rb:275:in `block in run'
+puma (3.7.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /home/insane/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/insane/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/insane/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.6ms)
+  Rendering /home/insane/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/insane/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendering /home/insane/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/insane/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/insane/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (31.5ms)
+Started GET "/trivia_question" for 127.0.0.1 at 2017-02-16 23:25:10 -0500
+Processing by TriviaQuestionController#random_trivia_question as HTML
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-16 23:25:19 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 81ms (Views: 79.9ms | ActiveRecord: 0.0ms)
+
+
+  [1m[36mTriviaQuestion Load (0.9ms)[0m  [1m[34mSELECT "trivia_questions".* FROM "trivia_questions"[0m
+  [1m[36mTriviaQuestion Load (0.8ms)[0m  [1m[34mSELECT "trivia_questions".* FROM "trivia_questions"[0m
+  [1m[36mTriviaQuestion Load (0.7ms)[0m  [1m[34mSELECT "trivia_questions".* FROM "trivia_questions"[0m
+  [1m[36mTriviaQuestion Load (0.8ms)[0m  [1m[34mSELECT "trivia_questions".* FROM "trivia_questions"[0m
+  [1m[36mTriviaQuestion Load (0.8ms)[0m  [1m[34mSELECT "trivia_questions".* FROM "trivia_questions"[0m
+  [1m[36mTriviaQuestion Load (0.8ms)[0m  [1m[34mSELECT "trivia_questions".* FROM "trivia_questions"[0m
+  [1m[36mTriviaQuestion Load (0.9ms)[0m  [1m[34mSELECT "trivia_questions".* FROM "trivia_questions"[0m
+  [1m[36mTriviaQuestion Load (0.8ms)[0m  [1m[34mSELECT "trivia_questions".* FROM "trivia_questions"[0m
+  [1m[36mTriviaQuestion Load (0.8ms)[0m  [1m[34mSELECT "trivia_questions".* FROM "trivia_questions"[0m
+  [1m[36mTriviaQuestion Load (0.8ms)[0m  [1m[34mSELECT "trivia_questions".* FROM "trivia_questions"[0m
+  [1m[36mTriviaQuestion Load (0.8ms)[0m  [1m[34mSELECT "trivia_questions".* FROM "trivia_questions"[0m
+  [1m[36mTriviaQuestion Load (0.7ms)[0m  [1m[34mSELECT "trivia_questions".* FROM "trivia_questions"[0m
+  [1m[36mTriviaQuestion Load (0.8ms)[0m  [1m[34mSELECT "trivia_questions".* FROM "trivia_questions"[0m
+  [1m[36mTriviaQuestion Load (0.8ms)[0m  [1m[34mSELECT "trivia_questions".* FROM "trivia_questions"[0m
+  [1m[36mTriviaQuestion Load (0.9ms)[0m  [1m[34mSELECT "trivia_questions".* FROM "trivia_questions"[0m
+  [1m[36mTriviaQuestion Load (0.7ms)[0m  [1m[34mSELECT "trivia_questions".* FROM "trivia_questions"[0m
+  [1m[36mTriviaQuestion Load (0.8ms)[0m  [1m[34mSELECT "trivia_questions".* FROM "trivia_questions"[0m
+  [1m[36mTriviaQuestion Load (0.7ms)[0m  [1m[34mSELECT  "trivia_questions".* FROM "trivia_questions" ORDER BY "trivia_questions"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mTriviaQuestion Load (0.6ms)[0m  [1m[34mSELECT "trivia_questions".* FROM "trivia_questions"[0m
+Started GET "/" for 127.0.0.1 at 2017-02-16 23:38:22 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 3304ms (Views: 3303.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/trivia_question" for 127.0.0.1 at 2017-02-16 23:38:33 -0500
+Processing by TriviaQuestionController#random_trivia_question as */*
+Completed 500 Internal Server Error in 104ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `random_question' for #<TriviaQuestionController:0x007f6baca397f0>
+Did you mean?  random_trivia_question):
+  
+app/controllers/trivia_question_controller.rb:3:in `random_trivia_question'
+  Rendering /home/insane/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/insane/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/insane/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.2ms)
+  Rendering /home/insane/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/insane/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendering /home/insane/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/insane/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /home/insane/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (61.5ms)
+Started GET "/" for 127.0.0.1 at 2017-02-16 23:38:43 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 72ms (Views: 70.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-16 23:47:43 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.5ms)
+Completed 500 Internal Server Error in 1133ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (SyntaxError: unknown: Unexpected token (16:12)
+  14 | 
+  15 |   getTriviaData(){
+> 16 |     var csrf-token = document.querySelectorAll('[name="csrf-token"]')[0].getAttribute("content");
+     |             ^
+  17 | 
+  18 |     return fetch('/trivia_question'{
+  19 |       method: 'GET',):
+     5:     <%= csrf_meta_tags %>
+     6: 
+     7:     <%= stylesheet_link_tag    'application', media: 'all' %>
+     8:     <%= javascript_include_tag 'application' %>
+     9:     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    10:   </head>
+    11: 
+  
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb__1452670618353936110_70050064488100'
+  Rendering /home/insane/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /home/insane/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/insane/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (9.9ms)
+  Rendering /home/insane/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/insane/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.7ms)
+  Rendering /home/insane/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/insane/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/insane/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (40.4ms)
+Started GET "/" for 127.0.0.1 at 2017-02-16 23:48:00 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+Completed 500 Internal Server Error in 1116ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (SyntaxError: unknown: Unexpected token (18:35)
+  16 |     var csrfToken = document.querySelectorAll('[name="csrf-token"]')[0].getAttribute("content");
+  17 | 
+> 18 |     return fetch('/trivia_question'{
+     |                                    ^
+  19 |       method: 'GET',
+  20 |       headers: {
+  21 |         'Accept': 'application/json',):
+     5:     <%= csrf_meta_tags %>
+     6: 
+     7:     <%= stylesheet_link_tag    'application', media: 'all' %>
+     8:     <%= javascript_include_tag 'application' %>
+     9:     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    10:   </head>
+    11: 
+  
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb__1452670618353936110_47264864995940'
+  Rendering /home/insane/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /home/insane/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/insane/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (8.0ms)
+  Rendering /home/insane/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/insane/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendering /home/insane/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/insane/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/insane/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (36.0ms)
+Started GET "/" for 127.0.0.1 at 2017-02-16 23:48:12 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 1737ms (Views: 1736.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-16 23:48:52 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 1663ms (Views: 1661.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/trivia_question" for 127.0.0.1 at 2017-02-16 23:49:02 -0500
+Processing by TriviaQuestionController#random_trivia_question as JSON
+  Parameters: {"trivia_question"=>{}}
+Completed 500 Internal Server Error in 111ms (ActiveRecord: 5.5ms)
+
+
+  
+NameError (undefined local variable or method `random_question' for #<TriviaQuestionController:0x007f6b9a89a348>
+Did you mean?  random_trivia_question):
+  
+app/controllers/trivia_question_controller.rb:3:in `random_trivia_question'
+  Rendering /home/insane/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/insane/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/insane/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (8.1ms)
+  Rendering /home/insane/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/insane/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.8ms)
+  Rendering /home/insane/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/insane/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.2ms)
+  Rendered /home/insane/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (80.7ms)
+Started GET "/" for 127.0.0.1 at 2017-02-16 23:50:00 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 71ms (Views: 69.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-16 23:51:45 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+Completed 500 Internal Server Error in 1160ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (SyntaxError: unknown: Unexpected token (24:24)
+  22 |         'Content-Type': 'application/json'
+  23 |       }.
+> 24 |       authenticity_token: csrfToken
+     |                         ^
+  25 |     }).then((response) => response.json())
+  26 |     .then((responseJson) => {
+  27 |       console.log(responseJson);):
+     5:     <%= csrf_meta_tags %>
+     6: 
+     7:     <%= stylesheet_link_tag    'application', media: 'all' %>
+     8:     <%= javascript_include_tag 'application' %>
+     9:     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    10:   </head>
+    11: 
+  
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb__1452670618353936110_47264878601960'
+  Rendering /home/insane/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /home/insane/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/insane/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (9.0ms)
+  Rendering /home/insane/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/insane/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendering /home/insane/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/insane/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/insane/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (38.1ms)
+Started GET "/" for 127.0.0.1 at 2017-02-16 23:51:59 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 1631ms (Views: 1629.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/trivia_question" for 127.0.0.1 at 2017-02-16 23:52:09 -0500
+Processing by TriviaQuestionController#random_trivia_question as JSON
+  Parameters: {"trivia_question"=>{}}
+  [1m[36mTriviaQuestion Load (0.7ms)[0m  [1m[34mSELECT "trivia_questions".* FROM "trivia_questions"[0m
+  [1m[36mTriviaQuestion Load (0.4ms)[0m  [1m[34mSELECT  "trivia_questions".* FROM "trivia_questions" WHERE "trivia_questions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTriviaAnswer Load (0.5ms)[0m  [1m[34mSELECT  "trivia_answers".* FROM "trivia_answers" WHERE "trivia_answers"."trivia_question_id" = $1 LIMIT $2[0m  [["trivia_question_id", 1], ["LIMIT", 1]]
+  [1m[36mTriviaAnswer Load (0.3ms)[0m  [1m[34mSELECT "trivia_answers".* FROM "trivia_answers" WHERE "trivia_answers"."trivia_question_id" = $1[0m  [["trivia_question_id", 1]]
+Completed 200 OK in 65ms (Views: 4.6ms | ActiveRecord: 11.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-16 23:55:10 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 1691ms (Views: 1689.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/trivia_question" for 127.0.0.1 at 2017-02-16 23:55:23 -0500
+Processing by TriviaQuestionController#random_trivia_question as JSON
+  Parameters: {"trivia_question"=>{}}
+  [1m[36mTriviaQuestion Load (0.6ms)[0m  [1m[34mSELECT "trivia_questions".* FROM "trivia_questions"[0m
+  [1m[36mTriviaQuestion Load (0.2ms)[0m  [1m[34mSELECT  "trivia_questions".* FROM "trivia_questions" WHERE "trivia_questions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTriviaAnswer Load (0.4ms)[0m  [1m[34mSELECT  "trivia_answers".* FROM "trivia_answers" WHERE "trivia_answers"."trivia_question_id" = $1 LIMIT $2[0m  [["trivia_question_id", 1], ["LIMIT", 1]]
+  [1m[36mTriviaAnswer Load (0.3ms)[0m  [1m[34mSELECT "trivia_answers".* FROM "trivia_answers" WHERE "trivia_answers"."trivia_question_id" = $1[0m  [["trivia_question_id", 1]]
+Completed 200 OK in 34ms (Views: 3.7ms | ActiveRecord: 10.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-16 23:55:39 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 1657ms (Views: 1656.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/trivia_question" for 127.0.0.1 at 2017-02-16 23:55:49 -0500
+Processing by TriviaQuestionController#random_trivia_question as JSON
+  Parameters: {"trivia_question"=>{}}
+  [1m[36mTriviaQuestion Load (0.5ms)[0m  [1m[34mSELECT "trivia_questions".* FROM "trivia_questions"[0m
+  [1m[36mTriviaQuestion Load (0.4ms)[0m  [1m[34mSELECT  "trivia_questions".* FROM "trivia_questions" WHERE "trivia_questions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTriviaAnswer Load (0.4ms)[0m  [1m[34mSELECT  "trivia_answers".* FROM "trivia_answers" WHERE "trivia_answers"."trivia_question_id" = $1 LIMIT $2[0m  [["trivia_question_id", 1], ["LIMIT", 1]]
+  [1m[36mTriviaAnswer Load (0.3ms)[0m  [1m[34mSELECT "trivia_answers".* FROM "trivia_answers" WHERE "trivia_answers"."trivia_question_id" = $1[0m  [["trivia_question_id", 1]]
+Completed 200 OK in 34ms (Views: 3.5ms | ActiveRecord: 9.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-17 00:00:55 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 1611ms (Views: 1609.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/trivia_question" for 127.0.0.1 at 2017-02-17 00:01:04 -0500
+Processing by TriviaQuestionController#random_trivia_question as JSON
+  Parameters: {"trivia_question"=>{}}
+  [1m[36mTriviaQuestion Load (0.3ms)[0m  [1m[34mSELECT "trivia_questions".* FROM "trivia_questions"[0m
+  [1m[36mTriviaQuestion Load (0.3ms)[0m  [1m[34mSELECT  "trivia_questions".* FROM "trivia_questions" WHERE "trivia_questions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTriviaAnswer Load (0.4ms)[0m  [1m[34mSELECT  "trivia_answers".* FROM "trivia_answers" WHERE "trivia_answers"."trivia_question_id" = $1 LIMIT $2[0m  [["trivia_question_id", 1], ["LIMIT", 1]]
+  [1m[36mTriviaAnswer Load (0.3ms)[0m  [1m[34mSELECT "trivia_answers".* FROM "trivia_answers" WHERE "trivia_answers"."trivia_question_id" = $1[0m  [["trivia_question_id", 1]]
+Completed 200 OK in 31ms (Views: 3.4ms | ActiveRecord: 11.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-17 00:03:36 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 1190ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (SyntaxError: unknown: Unexpected token (40:21)
+  38 |   updateState(data){
+  39 |     this.setState({
+> 40 |       question: data.,
+     |                      ^
+  41 |       choices: data.choices,
+  42 |       correctChoice: data.correctChoice
+  43 |     });):
+     5:     <%= csrf_meta_tags %>
+     6: 
+     7:     <%= stylesheet_link_tag    'application', media: 'all' %>
+     8:     <%= javascript_include_tag 'application' %>
+     9:     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    10:   </head>
+    11: 
+  
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb__1452670618353936110_70050228281660'
+  Rendering /home/insane/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /home/insane/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/insane/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (20.5ms)
+  Rendering /home/insane/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/insane/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendering /home/insane/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/insane/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /home/insane/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (47.6ms)
+Started GET "/" for 127.0.0.1 at 2017-02-17 00:03:51 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 70ms (Views: 69.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/trivia_question" for 127.0.0.1 at 2017-02-17 00:04:02 -0500
+Processing by TriviaQuestionController#random_trivia_question as JSON
+  Parameters: {"trivia_question"=>{}}
+  [1m[36mTriviaQuestion Load (0.3ms)[0m  [1m[34mSELECT "trivia_questions".* FROM "trivia_questions"[0m
+  [1m[36mTriviaQuestion Load (0.3ms)[0m  [1m[34mSELECT  "trivia_questions".* FROM "trivia_questions" WHERE "trivia_questions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTriviaAnswer Load (0.3ms)[0m  [1m[34mSELECT  "trivia_answers".* FROM "trivia_answers" WHERE "trivia_answers"."trivia_question_id" = $1 LIMIT $2[0m  [["trivia_question_id", 1], ["LIMIT", 1]]
+  [1m[36mTriviaAnswer Load (0.3ms)[0m  [1m[34mSELECT "trivia_answers".* FROM "trivia_answers" WHERE "trivia_answers"."trivia_question_id" = $1[0m  [["trivia_question_id", 1]]
+Completed 200 OK in 24ms (Views: 2.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-17 00:04:57 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 2849ms (Views: 2847.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-17 00:05:42 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 1553ms (Views: 1551.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/trivia_question" for 127.0.0.1 at 2017-02-17 00:05:51 -0500
+Processing by TriviaQuestionController#random_trivia_question as JSON
+  Parameters: {"trivia_question"=>{}}
+  [1m[36mTriviaQuestion Load (0.4ms)[0m  [1m[34mSELECT "trivia_questions".* FROM "trivia_questions"[0m
+  [1m[36mTriviaQuestion Load (0.3ms)[0m  [1m[34mSELECT  "trivia_questions".* FROM "trivia_questions" WHERE "trivia_questions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTriviaAnswer Load (0.4ms)[0m  [1m[34mSELECT  "trivia_answers".* FROM "trivia_answers" WHERE "trivia_answers"."trivia_question_id" = $1 LIMIT $2[0m  [["trivia_question_id", 1], ["LIMIT", 1]]
+  [1m[36mTriviaAnswer Load (0.3ms)[0m  [1m[34mSELECT "trivia_answers".* FROM "trivia_answers" WHERE "trivia_answers"."trivia_question_id" = $1[0m  [["trivia_question_id", 1]]
+Completed 200 OK in 42ms (Views: 3.2ms | ActiveRecord: 12.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-17 00:09:56 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 2867ms (Views: 2865.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/trivia_question" for 127.0.0.1 at 2017-02-17 00:10:07 -0500
+Processing by TriviaQuestionController#random_trivia_question as JSON
+  Parameters: {"trivia_question"=>{}}
+  [1m[36mTriviaQuestion Load (0.8ms)[0m  [1m[34mSELECT "trivia_questions".* FROM "trivia_questions"[0m
+  [1m[36mTriviaQuestion Load (0.4ms)[0m  [1m[34mSELECT  "trivia_questions".* FROM "trivia_questions" WHERE "trivia_questions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTriviaAnswer Load (0.3ms)[0m  [1m[34mSELECT  "trivia_answers".* FROM "trivia_answers" WHERE "trivia_answers"."trivia_question_id" = $1 LIMIT $2[0m  [["trivia_question_id", 1], ["LIMIT", 1]]
+  [1m[36mTriviaAnswer Load (0.4ms)[0m  [1m[34mSELECT "trivia_answers".* FROM "trivia_answers" WHERE "trivia_answers"."trivia_question_id" = $1[0m  [["trivia_question_id", 1]]
+Completed 200 OK in 31ms (Views: 2.9ms | ActiveRecord: 8.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-17 00:11:14 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 2911ms (Views: 2909.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/trivia_question" for 127.0.0.1 at 2017-02-17 00:11:28 -0500
+Processing by TriviaQuestionController#random_trivia_question as JSON
+  Parameters: {"trivia_question"=>{}}
+  [1m[36mTriviaQuestion Load (0.4ms)[0m  [1m[34mSELECT "trivia_questions".* FROM "trivia_questions"[0m
+  [1m[36mTriviaQuestion Load (0.4ms)[0m  [1m[34mSELECT  "trivia_questions".* FROM "trivia_questions" WHERE "trivia_questions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTriviaAnswer Load (0.3ms)[0m  [1m[34mSELECT  "trivia_answers".* FROM "trivia_answers" WHERE "trivia_answers"."trivia_question_id" = $1 LIMIT $2[0m  [["trivia_question_id", 1], ["LIMIT", 1]]
+  [1m[36mTriviaAnswer Load (0.4ms)[0m  [1m[34mSELECT "trivia_answers".* FROM "trivia_answers" WHERE "trivia_answers"."trivia_question_id" = $1[0m  [["trivia_question_id", 1]]
+Completed 200 OK in 27ms (Views: 2.6ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-17 00:12:17 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 1562ms (Views: 1560.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/trivia_question" for 127.0.0.1 at 2017-02-17 00:12:27 -0500
+Processing by TriviaQuestionController#random_trivia_question as JSON
+  Parameters: {"trivia_question"=>{}}
+  [1m[36mTriviaQuestion Load (0.3ms)[0m  [1m[34mSELECT "trivia_questions".* FROM "trivia_questions"[0m
+  [1m[36mTriviaQuestion Load (0.3ms)[0m  [1m[34mSELECT  "trivia_questions".* FROM "trivia_questions" WHERE "trivia_questions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTriviaAnswer Load (0.3ms)[0m  [1m[34mSELECT  "trivia_answers".* FROM "trivia_answers" WHERE "trivia_answers"."trivia_question_id" = $1 LIMIT $2[0m  [["trivia_question_id", 1], ["LIMIT", 1]]
+  [1m[36mTriviaAnswer Load (0.3ms)[0m  [1m[34mSELECT "trivia_answers".* FROM "trivia_answers" WHERE "trivia_answers"."trivia_question_id" = $1[0m  [["trivia_question_id", 1]]
+Completed 200 OK in 30ms (Views: 2.6ms | ActiveRecord: 7.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-17 00:12:41 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 1555ms (Views: 1553.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/trivia_question" for 127.0.0.1 at 2017-02-17 00:12:51 -0500
+Processing by TriviaQuestionController#random_trivia_question as JSON
+  Parameters: {"trivia_question"=>{}}
+  [1m[36mTriviaQuestion Load (0.4ms)[0m  [1m[34mSELECT "trivia_questions".* FROM "trivia_questions"[0m
+  [1m[36mTriviaQuestion Load (0.4ms)[0m  [1m[34mSELECT  "trivia_questions".* FROM "trivia_questions" WHERE "trivia_questions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTriviaAnswer Load (0.3ms)[0m  [1m[34mSELECT  "trivia_answers".* FROM "trivia_answers" WHERE "trivia_answers"."trivia_question_id" = $1 LIMIT $2[0m  [["trivia_question_id", 1], ["LIMIT", 1]]
+  [1m[36mTriviaAnswer Load (0.3ms)[0m  [1m[34mSELECT "trivia_answers".* FROM "trivia_answers" WHERE "trivia_answers"."trivia_question_id" = $1[0m  [["trivia_question_id", 1]]
+Completed 200 OK in 26ms (Views: 2.6ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/trivia_question" for 127.0.0.1 at 2017-02-17 00:15:01 -0500
+Processing by TriviaQuestionController#random_trivia_question as JSON
+  Parameters: {"trivia_question"=>{}}
+  [1m[36mTriviaQuestion Load (0.3ms)[0m  [1m[34mSELECT "trivia_questions".* FROM "trivia_questions"[0m
+  [1m[36mTriviaQuestion Load (0.4ms)[0m  [1m[34mSELECT  "trivia_questions".* FROM "trivia_questions" WHERE "trivia_questions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTriviaAnswer Load (0.3ms)[0m  [1m[34mSELECT  "trivia_answers".* FROM "trivia_answers" WHERE "trivia_answers"."trivia_question_id" = $1 LIMIT $2[0m  [["trivia_question_id", 1], ["LIMIT", 1]]
+  [1m[36mTriviaAnswer Load (0.4ms)[0m  [1m[34mSELECT "trivia_answers".* FROM "trivia_answers" WHERE "trivia_answers"."trivia_question_id" = $1[0m  [["trivia_question_id", 1]]
+Completed 200 OK in 33ms (Views: 3.0ms | ActiveRecord: 7.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-17 00:15:24 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 1589ms (Views: 1587.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/trivia_question" for 127.0.0.1 at 2017-02-17 00:15:34 -0500
+Processing by TriviaQuestionController#random_trivia_question as JSON
+  Parameters: {"trivia_question"=>{}}
+  [1m[36mTriviaQuestion Load (0.4ms)[0m  [1m[34mSELECT "trivia_questions".* FROM "trivia_questions"[0m
+  [1m[36mTriviaQuestion Load (0.6ms)[0m  [1m[34mSELECT  "trivia_questions".* FROM "trivia_questions" WHERE "trivia_questions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTriviaAnswer Load (0.4ms)[0m  [1m[34mSELECT  "trivia_answers".* FROM "trivia_answers" WHERE "trivia_answers"."trivia_question_id" = $1 LIMIT $2[0m  [["trivia_question_id", 1], ["LIMIT", 1]]
+  [1m[36mTriviaAnswer Load (0.4ms)[0m  [1m[34mSELECT "trivia_answers".* FROM "trivia_answers" WHERE "trivia_answers"."trivia_question_id" = $1[0m  [["trivia_question_id", 1]]
+Completed 200 OK in 11ms (Views: 2.2ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-17 00:15:40 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 80ms (Views: 78.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-17 00:16:14 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 91ms (Views: 89.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/trivia_question" for 127.0.0.1 at 2017-02-17 00:16:22 -0500
+Processing by TriviaQuestionController#random_trivia_question as JSON
+  Parameters: {"trivia_question"=>{}}
+  [1m[36mTriviaQuestion Load (0.3ms)[0m  [1m[34mSELECT "trivia_questions".* FROM "trivia_questions"[0m
+  [1m[36mTriviaQuestion Load (0.2ms)[0m  [1m[34mSELECT  "trivia_questions".* FROM "trivia_questions" WHERE "trivia_questions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTriviaAnswer Load (0.2ms)[0m  [1m[34mSELECT  "trivia_answers".* FROM "trivia_answers" WHERE "trivia_answers"."trivia_question_id" = $1 LIMIT $2[0m  [["trivia_question_id", 1], ["LIMIT", 1]]
+  [1m[36mTriviaAnswer Load (0.2ms)[0m  [1m[34mSELECT "trivia_answers".* FROM "trivia_answers" WHERE "trivia_answers"."trivia_question_id" = $1[0m  [["trivia_question_id", 1]]
+Completed 200 OK in 6ms (Views: 1.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-17 00:16:37 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 143ms (Views: 141.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/trivia_question" for 127.0.0.1 at 2017-02-17 00:16:46 -0500
+Processing by TriviaQuestionController#random_trivia_question as JSON
+  Parameters: {"trivia_question"=>{}}
+  [1m[36mTriviaQuestion Load (0.4ms)[0m  [1m[34mSELECT "trivia_questions".* FROM "trivia_questions"[0m
+  [1m[36mTriviaQuestion Load (0.3ms)[0m  [1m[34mSELECT  "trivia_questions".* FROM "trivia_questions" WHERE "trivia_questions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTriviaAnswer Load (0.3ms)[0m  [1m[34mSELECT  "trivia_answers".* FROM "trivia_answers" WHERE "trivia_answers"."trivia_question_id" = $1 LIMIT $2[0m  [["trivia_question_id", 1], ["LIMIT", 1]]
+  [1m[36mTriviaAnswer Load (0.3ms)[0m  [1m[34mSELECT "trivia_answers".* FROM "trivia_answers" WHERE "trivia_answers"."trivia_question_id" = $1[0m  [["trivia_question_id", 1]]
+Completed 200 OK in 6ms (Views: 1.6ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-17 00:17:21 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 102ms (Views: 100.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/trivia_question" for 127.0.0.1 at 2017-02-17 00:17:29 -0500
+Processing by TriviaQuestionController#random_trivia_question as JSON
+  Parameters: {"trivia_question"=>{}}
+  [1m[36mTriviaQuestion Load (0.6ms)[0m  [1m[34mSELECT "trivia_questions".* FROM "trivia_questions"[0m
+  [1m[36mTriviaQuestion Load (0.5ms)[0m  [1m[34mSELECT  "trivia_questions".* FROM "trivia_questions" WHERE "trivia_questions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTriviaAnswer Load (0.5ms)[0m  [1m[34mSELECT  "trivia_answers".* FROM "trivia_answers" WHERE "trivia_answers"."trivia_question_id" = $1 LIMIT $2[0m  [["trivia_question_id", 1], ["LIMIT", 1]]
+  [1m[36mTriviaAnswer Load (0.2ms)[0m  [1m[34mSELECT "trivia_answers".* FROM "trivia_answers" WHERE "trivia_answers"."trivia_question_id" = $1[0m  [["trivia_question_id", 1]]
+Completed 200 OK in 9ms (Views: 2.2ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-17 00:18:03 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 88ms (Views: 86.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/trivia_question" for 127.0.0.1 at 2017-02-17 00:18:11 -0500
+Processing by TriviaQuestionController#random_trivia_question as JSON
+  Parameters: {"trivia_question"=>{}}
+  [1m[36mTriviaQuestion Load (0.4ms)[0m  [1m[34mSELECT "trivia_questions".* FROM "trivia_questions"[0m
+  [1m[36mTriviaQuestion Load (0.2ms)[0m  [1m[34mSELECT  "trivia_questions".* FROM "trivia_questions" WHERE "trivia_questions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTriviaAnswer Load (0.4ms)[0m  [1m[34mSELECT  "trivia_answers".* FROM "trivia_answers" WHERE "trivia_answers"."trivia_question_id" = $1 LIMIT $2[0m  [["trivia_question_id", 1], ["LIMIT", 1]]
+  [1m[36mTriviaAnswer Load (0.4ms)[0m  [1m[34mSELECT "trivia_answers".* FROM "trivia_answers" WHERE "trivia_answers"."trivia_question_id" = $1[0m  [["trivia_question_id", 1]]
+Completed 200 OK in 8ms (Views: 2.2ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-17 00:18:41 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 127ms (Views: 125.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-17 00:18:59 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 105ms (Views: 103.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/trivia_question" for 127.0.0.1 at 2017-02-17 00:19:07 -0500
+Processing by TriviaQuestionController#random_trivia_question as JSON
+  Parameters: {"trivia_question"=>{}}
+  [1m[36mTriviaQuestion Load (0.4ms)[0m  [1m[34mSELECT "trivia_questions".* FROM "trivia_questions"[0m
+  [1m[36mTriviaQuestion Load (0.4ms)[0m  [1m[34mSELECT  "trivia_questions".* FROM "trivia_questions" WHERE "trivia_questions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTriviaAnswer Load (0.3ms)[0m  [1m[34mSELECT  "trivia_answers".* FROM "trivia_answers" WHERE "trivia_answers"."trivia_question_id" = $1 LIMIT $2[0m  [["trivia_question_id", 1], ["LIMIT", 1]]
+  [1m[36mTriviaAnswer Load (0.3ms)[0m  [1m[34mSELECT "trivia_answers".* FROM "trivia_answers" WHERE "trivia_answers"."trivia_question_id" = $1[0m  [["trivia_question_id", 1]]
+Completed 200 OK in 8ms (Views: 2.6ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-17 00:19:17 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 104ms (Views: 101.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/trivia_question" for 127.0.0.1 at 2017-02-17 00:19:26 -0500
+Processing by TriviaQuestionController#random_trivia_question as JSON
+  Parameters: {"trivia_question"=>{}}
+  [1m[36mTriviaQuestion Load (0.3ms)[0m  [1m[34mSELECT "trivia_questions".* FROM "trivia_questions"[0m
+  [1m[36mTriviaQuestion Load (0.3ms)[0m  [1m[34mSELECT  "trivia_questions".* FROM "trivia_questions" WHERE "trivia_questions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTriviaAnswer Load (0.3ms)[0m  [1m[34mSELECT  "trivia_answers".* FROM "trivia_answers" WHERE "trivia_answers"."trivia_question_id" = $1 LIMIT $2[0m  [["trivia_question_id", 1], ["LIMIT", 1]]
+  [1m[36mTriviaAnswer Load (0.3ms)[0m  [1m[34mSELECT "trivia_answers".* FROM "trivia_answers" WHERE "trivia_answers"."trivia_question_id" = $1[0m  [["trivia_question_id", 1]]
+Completed 200 OK in 7ms (Views: 2.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-17 00:35:32 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 4148ms (Views: 4146.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-17 00:36:05 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 1669ms (Views: 1668.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/trivia_question" for 127.0.0.1 at 2017-02-17 00:36:14 -0500
+Processing by TriviaQuestionController#random_trivia_question as JSON
+  Parameters: {"trivia_question"=>{}}
+  [1m[36mTriviaQuestion Load (0.4ms)[0m  [1m[34mSELECT "trivia_questions".* FROM "trivia_questions"[0m
+  [1m[36mTriviaQuestion Load (0.4ms)[0m  [1m[34mSELECT  "trivia_questions".* FROM "trivia_questions" WHERE "trivia_questions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTriviaAnswer Load (0.3ms)[0m  [1m[34mSELECT  "trivia_answers".* FROM "trivia_answers" WHERE "trivia_answers"."trivia_question_id" = $1 LIMIT $2[0m  [["trivia_question_id", 1], ["LIMIT", 1]]
+  [1m[36mTriviaAnswer Load (0.3ms)[0m  [1m[34mSELECT "trivia_answers".* FROM "trivia_answers" WHERE "trivia_answers"."trivia_question_id" = $1[0m  [["trivia_question_id", 1]]
+Completed 200 OK in 29ms (Views: 2.6ms | ActiveRecord: 8.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-17 00:37:04 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 2924ms (Views: 2923.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/trivia_question" for 127.0.0.1 at 2017-02-17 00:37:16 -0500
+Processing by TriviaQuestionController#random_trivia_question as JSON
+  Parameters: {"trivia_question"=>{}}
+  [1m[36mTriviaQuestion Load (0.4ms)[0m  [1m[34mSELECT "trivia_questions".* FROM "trivia_questions"[0m
+  [1m[36mTriviaQuestion Load (0.4ms)[0m  [1m[34mSELECT  "trivia_questions".* FROM "trivia_questions" WHERE "trivia_questions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTriviaAnswer Load (0.4ms)[0m  [1m[34mSELECT  "trivia_answers".* FROM "trivia_answers" WHERE "trivia_answers"."trivia_question_id" = $1 LIMIT $2[0m  [["trivia_question_id", 1], ["LIMIT", 1]]
+  [1m[36mTriviaAnswer Load (0.3ms)[0m  [1m[34mSELECT "trivia_answers".* FROM "trivia_answers" WHERE "trivia_answers"."trivia_question_id" = $1[0m  [["trivia_question_id", 1]]
+Completed 200 OK in 30ms (Views: 2.5ms | ActiveRecord: 8.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-17 00:38:03 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 1642ms (Views: 1640.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/trivia_question" for 127.0.0.1 at 2017-02-17 00:38:12 -0500
+Processing by TriviaQuestionController#random_trivia_question as JSON
+  Parameters: {"trivia_question"=>{}}
+  [1m[36mTriviaQuestion Load (0.3ms)[0m  [1m[34mSELECT "trivia_questions".* FROM "trivia_questions"[0m
+  [1m[36mTriviaQuestion Load (0.4ms)[0m  [1m[34mSELECT  "trivia_questions".* FROM "trivia_questions" WHERE "trivia_questions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTriviaAnswer Load (0.3ms)[0m  [1m[34mSELECT  "trivia_answers".* FROM "trivia_answers" WHERE "trivia_answers"."trivia_question_id" = $1 LIMIT $2[0m  [["trivia_question_id", 1], ["LIMIT", 1]]
+  [1m[36mTriviaAnswer Load (0.3ms)[0m  [1m[34mSELECT "trivia_answers".* FROM "trivia_answers" WHERE "trivia_answers"."trivia_question_id" = $1[0m  [["trivia_question_id", 1]]
+Completed 200 OK in 30ms (Views: 2.5ms | ActiveRecord: 8.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-17 00:39:04 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 1669ms (Views: 1668.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/trivia_question" for 127.0.0.1 at 2017-02-17 00:39:27 -0500
+Processing by TriviaQuestionController#random_trivia_question as JSON
+  Parameters: {"trivia_question"=>{}}
+  [1m[36mTriviaQuestion Load (0.3ms)[0m  [1m[34mSELECT "trivia_questions".* FROM "trivia_questions"[0m
+  [1m[36mTriviaQuestion Load (0.4ms)[0m  [1m[34mSELECT  "trivia_questions".* FROM "trivia_questions" WHERE "trivia_questions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTriviaAnswer Load (0.3ms)[0m  [1m[34mSELECT  "trivia_answers".* FROM "trivia_answers" WHERE "trivia_answers"."trivia_question_id" = $1 LIMIT $2[0m  [["trivia_question_id", 1], ["LIMIT", 1]]
+  [1m[36mTriviaAnswer Load (0.3ms)[0m  [1m[34mSELECT "trivia_answers".* FROM "trivia_answers" WHERE "trivia_answers"."trivia_question_id" = $1[0m  [["trivia_question_id", 1]]
+Completed 200 OK in 30ms (Views: 2.6ms | ActiveRecord: 9.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-17 00:40:03 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 1657ms (Views: 1656.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/trivia_question" for 127.0.0.1 at 2017-02-17 00:40:13 -0500
+Processing by TriviaQuestionController#random_trivia_question as JSON
+  Parameters: {"trivia_question"=>{}}
+  [1m[36mTriviaQuestion Load (0.4ms)[0m  [1m[34mSELECT "trivia_questions".* FROM "trivia_questions"[0m
+  [1m[36mTriviaQuestion Load (0.3ms)[0m  [1m[34mSELECT  "trivia_questions".* FROM "trivia_questions" WHERE "trivia_questions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTriviaAnswer Load (0.3ms)[0m  [1m[34mSELECT  "trivia_answers".* FROM "trivia_answers" WHERE "trivia_answers"."trivia_question_id" = $1 LIMIT $2[0m  [["trivia_question_id", 1], ["LIMIT", 1]]
+  [1m[36mTriviaAnswer Load (0.4ms)[0m  [1m[34mSELECT "trivia_answers".* FROM "trivia_answers" WHERE "trivia_answers"."trivia_question_id" = $1[0m  [["trivia_question_id", 1]]
+Completed 200 OK in 27ms (Views: 2.6ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-17 00:40:39 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 1656ms (Views: 1654.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/trivia_question" for 127.0.0.1 at 2017-02-17 00:40:49 -0500
+Processing by TriviaQuestionController#random_trivia_question as JSON
+  Parameters: {"trivia_question"=>{}}
+  [1m[36mTriviaQuestion Load (0.5ms)[0m  [1m[34mSELECT "trivia_questions".* FROM "trivia_questions"[0m
+  [1m[36mTriviaQuestion Load (0.3ms)[0m  [1m[34mSELECT  "trivia_questions".* FROM "trivia_questions" WHERE "trivia_questions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTriviaAnswer Load (0.3ms)[0m  [1m[34mSELECT  "trivia_answers".* FROM "trivia_answers" WHERE "trivia_answers"."trivia_question_id" = $1 LIMIT $2[0m  [["trivia_question_id", 1], ["LIMIT", 1]]
+  [1m[36mTriviaAnswer Load (0.3ms)[0m  [1m[34mSELECT "trivia_answers".* FROM "trivia_answers" WHERE "trivia_answers"."trivia_question_id" = $1[0m  [["trivia_question_id", 1]]
+Completed 200 OK in 24ms (Views: 2.7ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-17 00:41:40 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 1662ms (Views: 1661.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/trivia_question" for 127.0.0.1 at 2017-02-17 00:41:50 -0500
+Processing by TriviaQuestionController#random_trivia_question as JSON
+  Parameters: {"trivia_question"=>{}}
+  [1m[36mTriviaQuestion Load (0.4ms)[0m  [1m[34mSELECT "trivia_questions".* FROM "trivia_questions"[0m
+  [1m[36mTriviaQuestion Load (0.3ms)[0m  [1m[34mSELECT  "trivia_questions".* FROM "trivia_questions" WHERE "trivia_questions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTriviaAnswer Load (0.3ms)[0m  [1m[34mSELECT  "trivia_answers".* FROM "trivia_answers" WHERE "trivia_answers"."trivia_question_id" = $1 LIMIT $2[0m  [["trivia_question_id", 1], ["LIMIT", 1]]
+  [1m[36mTriviaAnswer Load (0.3ms)[0m  [1m[34mSELECT "trivia_answers".* FROM "trivia_answers" WHERE "trivia_answers"."trivia_question_id" = $1[0m  [["trivia_question_id", 1]]
+Completed 200 OK in 30ms (Views: 2.6ms | ActiveRecord: 7.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-17 00:42:16 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 1649ms (Views: 1647.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/trivia_question" for 127.0.0.1 at 2017-02-17 00:42:26 -0500
+Processing by TriviaQuestionController#random_trivia_question as JSON
+  Parameters: {"trivia_question"=>{}}
+  [1m[36mTriviaQuestion Load (0.4ms)[0m  [1m[34mSELECT "trivia_questions".* FROM "trivia_questions"[0m
+  [1m[36mTriviaQuestion Load (0.3ms)[0m  [1m[34mSELECT  "trivia_questions".* FROM "trivia_questions" WHERE "trivia_questions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTriviaAnswer Load (0.3ms)[0m  [1m[34mSELECT  "trivia_answers".* FROM "trivia_answers" WHERE "trivia_answers"."trivia_question_id" = $1 LIMIT $2[0m  [["trivia_question_id", 1], ["LIMIT", 1]]
+  [1m[36mTriviaAnswer Load (0.3ms)[0m  [1m[34mSELECT "trivia_answers".* FROM "trivia_answers" WHERE "trivia_answers"."trivia_question_id" = $1[0m  [["trivia_question_id", 1]]
+Completed 200 OK in 27ms (Views: 2.8ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/trivia_question" for 127.0.0.1 at 2017-02-17 00:42:47 -0500
+Processing by TriviaQuestionController#random_trivia_question as JSON
+  Parameters: {"trivia_question"=>{}}
+  [1m[36mTriviaQuestion Load (0.4ms)[0m  [1m[34mSELECT "trivia_questions".* FROM "trivia_questions"[0m
+  [1m[36mTriviaQuestion Load (0.3ms)[0m  [1m[34mSELECT  "trivia_questions".* FROM "trivia_questions" WHERE "trivia_questions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTriviaAnswer Load (0.3ms)[0m  [1m[34mSELECT  "trivia_answers".* FROM "trivia_answers" WHERE "trivia_answers"."trivia_question_id" = $1 LIMIT $2[0m  [["trivia_question_id", 1], ["LIMIT", 1]]
+  [1m[36mTriviaAnswer Load (0.3ms)[0m  [1m[34mSELECT "trivia_answers".* FROM "trivia_answers" WHERE "trivia_answers"."trivia_question_id" = $1[0m  [["trivia_question_id", 1]]
+Completed 200 OK in 6ms (Views: 1.8ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-17 00:44:16 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 1669ms (Views: 1667.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/trivia_question" for 127.0.0.1 at 2017-02-17 00:44:30 -0500
+Processing by TriviaQuestionController#random_trivia_question as JSON
+  Parameters: {"trivia_question"=>{}}
+  [1m[36mTriviaQuestion Load (0.3ms)[0m  [1m[34mSELECT "trivia_questions".* FROM "trivia_questions"[0m
+  [1m[36mTriviaQuestion Load (0.3ms)[0m  [1m[34mSELECT  "trivia_questions".* FROM "trivia_questions" WHERE "trivia_questions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTriviaAnswer Load (0.2ms)[0m  [1m[34mSELECT  "trivia_answers".* FROM "trivia_answers" WHERE "trivia_answers"."trivia_question_id" = $1 LIMIT $2[0m  [["trivia_question_id", 1], ["LIMIT", 1]]
+  [1m[36mTriviaAnswer Load (0.2ms)[0m  [1m[34mSELECT "trivia_answers".* FROM "trivia_answers" WHERE "trivia_answers"."trivia_question_id" = $1[0m  [["trivia_question_id", 1]]
+Completed 200 OK in 29ms (Views: 2.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/trivia_question" for 127.0.0.1 at 2017-02-17 00:44:42 -0500
+Processing by TriviaQuestionController#random_trivia_question as JSON
+  Parameters: {"trivia_question"=>{}}
+  [1m[36mTriviaQuestion Load (0.4ms)[0m  [1m[34mSELECT "trivia_questions".* FROM "trivia_questions"[0m
+  [1m[36mTriviaQuestion Load (0.4ms)[0m  [1m[34mSELECT  "trivia_questions".* FROM "trivia_questions" WHERE "trivia_questions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTriviaAnswer Load (0.3ms)[0m  [1m[34mSELECT  "trivia_answers".* FROM "trivia_answers" WHERE "trivia_answers"."trivia_question_id" = $1 LIMIT $2[0m  [["trivia_question_id", 1], ["LIMIT", 1]]
+  [1m[36mTriviaAnswer Load (0.3ms)[0m  [1m[34mSELECT "trivia_answers".* FROM "trivia_answers" WHERE "trivia_answers"."trivia_question_id" = $1[0m  [["trivia_question_id", 1]]
+Completed 200 OK in 10ms (Views: 2.4ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/trivia_question" for 127.0.0.1 at 2017-02-17 00:53:36 -0500
+Processing by TriviaQuestionController#random_trivia_question as JSON
+  Parameters: {"trivia_question"=>{}}
+  [1m[36mTriviaQuestion Load (0.3ms)[0m  [1m[34mSELECT "trivia_questions".* FROM "trivia_questions"[0m
+  [1m[36mTriviaQuestion Load (0.2ms)[0m  [1m[34mSELECT  "trivia_questions".* FROM "trivia_questions" WHERE "trivia_questions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTriviaAnswer Load (0.3ms)[0m  [1m[34mSELECT  "trivia_answers".* FROM "trivia_answers" WHERE "trivia_answers"."trivia_question_id" = $1 LIMIT $2[0m  [["trivia_question_id", 1], ["LIMIT", 1]]
+  [1m[36mTriviaAnswer Load (0.3ms)[0m  [1m[34mSELECT "trivia_answers".* FROM "trivia_answers" WHERE "trivia_answers"."trivia_question_id" = $1[0m  [["trivia_question_id", 1]]
+Completed 200 OK in 9ms (Views: 2.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/trivia_question" for 127.0.0.1 at 2017-02-17 00:53:48 -0500
+Processing by TriviaQuestionController#random_trivia_question as JSON
+  Parameters: {"trivia_question"=>{}}
+  [1m[36mTriviaQuestion Load (0.4ms)[0m  [1m[34mSELECT "trivia_questions".* FROM "trivia_questions"[0m
+  [1m[36mTriviaQuestion Load (0.3ms)[0m  [1m[34mSELECT  "trivia_questions".* FROM "trivia_questions" WHERE "trivia_questions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTriviaAnswer Load (0.3ms)[0m  [1m[34mSELECT  "trivia_answers".* FROM "trivia_answers" WHERE "trivia_answers"."trivia_question_id" = $1 LIMIT $2[0m  [["trivia_question_id", 1], ["LIMIT", 1]]
+  [1m[36mTriviaAnswer Load (0.2ms)[0m  [1m[34mSELECT "trivia_answers".* FROM "trivia_answers" WHERE "trivia_answers"."trivia_question_id" = $1[0m  [["trivia_question_id", 1]]
+Completed 200 OK in 8ms (Views: 2.0ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/trivia_question" for 127.0.0.1 at 2017-02-17 01:06:53 -0500
+Processing by TriviaQuestionController#random_trivia_question as JSON
+  Parameters: {"trivia_question"=>{}}
+  [1m[36mTriviaQuestion Load (0.5ms)[0m  [1m[34mSELECT "trivia_questions".* FROM "trivia_questions"[0m
+  [1m[36mTriviaQuestion Load (0.5ms)[0m  [1m[34mSELECT  "trivia_questions".* FROM "trivia_questions" WHERE "trivia_questions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTriviaAnswer Load (0.4ms)[0m  [1m[34mSELECT  "trivia_answers".* FROM "trivia_answers" WHERE "trivia_answers"."trivia_question_id" = $1 LIMIT $2[0m  [["trivia_question_id", 1], ["LIMIT", 1]]
+  [1m[36mTriviaAnswer Load (0.3ms)[0m  [1m[34mSELECT "trivia_answers".* FROM "trivia_answers" WHERE "trivia_answers"."trivia_question_id" = $1[0m  [["trivia_question_id", 1]]
+Completed 200 OK in 11ms (Views: 2.3ms | ActiveRecord: 1.7ms)
+
+
