@@ -1,10 +1,12 @@
 class Trivia extends React.Component {
+
   constructor() {
     super();
     this.state = {
       question: "",
       choices: [],
-      correctChoice: ''
+      correctChoice: '',
+      result: false
     }
   }
 
@@ -21,19 +23,19 @@ class Trivia extends React.Component {
         'Accept': 'application/json',
         'Content-Type': 'application/json'
       },
-      authenticity_token: csrfToken
+      params: {
+        authenticity_token: csrfToken
+      }
     }).then((response) => response.json())
     .then((responseJson) => {
-      console.log(responseJson);
-      debugger
-      this.updateState(data);
+      this.updateQuestion(responseJson);
     })
     .catch((error) => {
       console.error(error);
     });
   }
 
-  updateState(data){
+  updateQuestion(data){
     this.setState({
       question: data.question,
       choices: data.choices,
@@ -41,16 +43,33 @@ class Trivia extends React.Component {
     });
   }
 
-  answerHandler(){
+  endGame(result){
+    if(result){
+      var text = "Congrats, take a shot!"
+    }else{
+      var text = "You, suck!!!"
+    };
+    this.setState({
+      result: text
+    });
 
+    setTimeout(function(){
+      this.props.gameHandler(null)
+    }.bind(this), 3000);
   }
 
   render(){
-    return(
-      <div>
-        <h1>{this.state.question}?</h1>
-        {this.state.choices.map((choiceText, i) => <Choice key={i} choiceText={choiceText} correctChoice={this.state.correctChoice} />)}
-      </div>
-    )
+    if(this.state.result){
+      return(
+        <Message text={this.state.result}/>
+      )
+    } else {
+      return(
+        <div>
+          <h1>{this.state.question}</h1>
+          {this.state.choices.map((choiceText, i) => <Choice key={i} choiceText={choiceText} correctChoice={this.state.correctChoice} endGame={this.endGame.bind(this)}/>)}
+        </div>
+      )
+    }
   }
 }
