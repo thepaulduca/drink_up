@@ -1,16 +1,14 @@
 class Choice extends React.Component {
 
-  // handleClick(){
-
-  // }
-  endGame(){
-    this.props.gameHandler(null);
+  clickHandler(){
+    var result = this.props.choiceText.answer === this.props.correctChoice;
+    this.props.endGame(result);
   }
 
   render(){
     return(
-      <div onClick={this.endGame()}>
-        {this.props.choiceText}
+      <div className="option" onClick={this.clickHandler.bind(this)}>
+        {this.props.choiceText.answer}
       </div>
     )
   }
