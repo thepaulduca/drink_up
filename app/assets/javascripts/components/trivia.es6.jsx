@@ -65,7 +65,7 @@ class Trivia extends React.Component {
       )
     } else {
       return(
-        <div>
+        <div className='container'>
           <h1>{this.state.question}</h1>
           {this.state.choices.map((choiceText, i) => <Choice key={i} choiceText={choiceText} correctChoice={this.state.correctChoice} endGame={this.endGame.bind(this)}/>)}
         </div>
