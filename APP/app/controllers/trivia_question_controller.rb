@@ -4,6 +4,6 @@ class TriviaQuestionController < ApplicationController
     choices = question.answers
     correct_choice = question.trivia_answer
 
-    render :json => {question: question, choices: choices, correctChoice: correct_choice}
+    render :json => {question: question.question, choices: choices, correctChoice: correct_choice.answer}
   end
 end
