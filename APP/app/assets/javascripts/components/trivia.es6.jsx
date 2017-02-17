@@ -13,20 +13,24 @@ class Trivia extends React.Component {
   }
 
   getTriviaData(){
-    return fetch('https://facebook.github.io/react-native/movies.json')
-      .then((response) => response.json())
-      .then((responseJson) => {
-        console.log(responseJson);
-        let data = {
-          question: "Who is 3rd floor bartender at whitehorse",
-          choices: ['Roman', 'Tom', 'Derek', 'Alisa'],
-          correctChoice: "Tom"
-        }
-        this.updateState(data);
-      })
-      .catch((error) => {
-        console.error(error);
-      });
+    var csrfToken = document.querySelectorAll('[name="csrf-token"]')[0].getAttribute("content");
+
+    return fetch('/trivia_question', {
+      method: 'GET',
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+      },
+      authenticity_token: csrfToken
+    }).then((response) => response.json())
+    .then((responseJson) => {
+      console.log(responseJson);
+      debugger
+      this.updateState(data);
+    })
+    .catch((error) => {
+      console.error(error);
+    });
   }
 
   updateState(data){
