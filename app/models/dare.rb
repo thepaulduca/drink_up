@@ -1,0 +1,2 @@
+class Dare < ApplicationRecord
+end
