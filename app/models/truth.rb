@@ -1,0 +1,2 @@
+class Truth < ApplicationRecord
+end
