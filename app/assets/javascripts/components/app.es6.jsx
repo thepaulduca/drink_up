@@ -16,7 +16,7 @@ class App extends React.Component {
     let activeGame = this.state.activeGame
     if(activeGame){
       return(
-        <TruthDare game={activeGame} gameHandler={this.activeGameHandler.bind(this)}/>
+        <NeverHaveIEver game={activeGame} gameHandler={this.activeGameHandler.bind(this)}/>
       )
     } else {
       return(

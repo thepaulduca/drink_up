@@ -1,8 +1,8 @@
 class TruthDareController < ApplicationController
 
-  def random
+  def random_td
     arry = random_truth_dare
-    render :json => {truth1: arry[0], truth2: arry[1], dare1: arry[2], dare2: arry[3]}
+    render :json => {truth: arry[0], dare: arry[1]}
   end
 
 end

@@ -1749,3 +1749,1098 @@ Processing by TruthDareController#random as JSON
 Completed 200 OK in 25ms (Views: 1.0ms | ActiveRecord: 4.2ms)
 
 
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (4.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", :environment]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", :environment]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", :environment]]
+  [1m[35m (5053.9ms)[0m  [1m[35mDROP DATABASE IF EXISTS "project_development"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", :environment]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", :environment]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", :environment]]
+  [1m[35m (143.8ms)[0m  [1m[35mDROP DATABASE IF EXISTS "project_development"[0m
+  [1m[35m (134.6ms)[0m  [1m[35mDROP DATABASE IF EXISTS "project_test"[0m
+  [1m[35m (16.1ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying PRIMARY KEY)[0m
+  [1m[35m (5.2ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(279088437195799245);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateTriviaQuestions (20170215192522)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (8.3ms)[0m  [1m[35mCREATE TABLE "trivia_questions" ("id" serial primary key, "category" character varying, "question" character varying, "trivia_answer_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170215192522"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateTriviaAnswers (20170215192533)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (6.9ms)[0m  [1m[35mCREATE TABLE "trivia_answers" ("id" serial primary key, "answer" character varying, "trivia_question_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170215192533"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateTruths (20170221154002)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (7.4ms)[0m  [1m[35mCREATE TABLE "truths" ("id" serial primary key, "content" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170221154002"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateDares (20170221154008)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (5.7ms)[0m  [1m[35mCREATE TABLE "dares" ("id" serial primary key, "content" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170221154008"]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", 2017-02-28 18:38:23 UTC], ["updated_at", 2017-02-28 18:38:23 UTC]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_advisory_unlock(279088437195799245)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "trivia_questions" ("category", "question", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["category", "sports"], ["question", "What is the name of the Super Bowl trophy?"], ["created_at", 2017-02-28 18:38:28 UTC], ["updated_at", 2017-02-28 18:38:28 UTC]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTriviaQuestion Load (0.3ms)[0m  [1m[34mSELECT  "trivia_questions".* FROM "trivia_questions" WHERE "trivia_questions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "trivia_answers" ("answer", "trivia_question_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["answer", "The Lombardi Trophy"], ["trivia_question_id", 1], ["created_at", 2017-02-28 18:38:28 UTC], ["updated_at", 2017-02-28 18:38:28 UTC]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTriviaQuestion Load (0.2ms)[0m  [1m[34mSELECT  "trivia_questions".* FROM "trivia_questions" WHERE "trivia_questions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "trivia_answers" ("answer", "trivia_question_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["answer", "The Champion's Trophy"], ["trivia_question_id", 1], ["created_at", 2017-02-28 18:38:28 UTC], ["updated_at", 2017-02-28 18:38:28 UTC]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTriviaQuestion Load (0.3ms)[0m  [1m[34mSELECT  "trivia_questions".* FROM "trivia_questions" WHERE "trivia_questions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "trivia_answers" ("answer", "trivia_question_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["answer", "The Super Bowl Trophy"], ["trivia_question_id", 1], ["created_at", 2017-02-28 18:38:28 UTC], ["updated_at", 2017-02-28 18:38:28 UTC]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTriviaQuestion Load (0.5ms)[0m  [1m[34mSELECT  "trivia_questions".* FROM "trivia_questions" WHERE "trivia_questions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "trivia_answers" ("answer", "trivia_question_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["answer", "The Golden Ball"], ["trivia_question_id", 1], ["created_at", 2017-02-28 18:38:28 UTC], ["updated_at", 2017-02-28 18:38:28 UTC]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTriviaQuestion Load (0.3ms)[0m  [1m[34mSELECT  "trivia_questions".* FROM "trivia_questions" WHERE "trivia_questions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "trivia_questions" ("category", "question", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["category", "sports"], ["question", "What basketball player averaged a tripple double in a season?"], ["created_at", 2017-02-28 18:38:28 UTC], ["updated_at", 2017-02-28 18:38:28 UTC]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTriviaQuestion Load (0.3ms)[0m  [1m[34mSELECT  "trivia_questions".* FROM "trivia_questions" WHERE "trivia_questions"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "trivia_answers" ("answer", "trivia_question_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["answer", "Michael Jordan"], ["trivia_question_id", 2], ["created_at", 2017-02-28 18:38:28 UTC], ["updated_at", 2017-02-28 18:38:28 UTC]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTriviaQuestion Load (0.2ms)[0m  [1m[34mSELECT  "trivia_questions".* FROM "trivia_questions" WHERE "trivia_questions"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "trivia_answers" ("answer", "trivia_question_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["answer", "Oscar Robinson"], ["trivia_question_id", 2], ["created_at", 2017-02-28 18:38:28 UTC], ["updated_at", 2017-02-28 18:38:28 UTC]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTriviaQuestion Load (0.2ms)[0m  [1m[34mSELECT  "trivia_questions".* FROM "trivia_questions" WHERE "trivia_questions"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "trivia_answers" ("answer", "trivia_question_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["answer", "Bill Russel"], ["trivia_question_id", 2], ["created_at", 2017-02-28 18:38:28 UTC], ["updated_at", 2017-02-28 18:38:28 UTC]]
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTriviaQuestion Load (0.2ms)[0m  [1m[34mSELECT  "trivia_questions".* FROM "trivia_questions" WHERE "trivia_questions"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "trivia_answers" ("answer", "trivia_question_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["answer", "Lebron James"], ["trivia_question_id", 2], ["created_at", 2017-02-28 18:38:28 UTC], ["updated_at", 2017-02-28 18:38:28 UTC]]
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTriviaQuestion Load (0.2ms)[0m  [1m[34mSELECT  "trivia_questions".* FROM "trivia_questions" WHERE "trivia_questions"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "trivia_questions" ("category", "question", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["category", "sports"], ["question", "What baseball team has the most World Series Victories?"], ["created_at", 2017-02-28 18:38:28 UTC], ["updated_at", 2017-02-28 18:38:28 UTC]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTriviaQuestion Load (0.2ms)[0m  [1m[34mSELECT  "trivia_questions".* FROM "trivia_questions" WHERE "trivia_questions"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "trivia_answers" ("answer", "trivia_question_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["answer", "The Mets"], ["trivia_question_id", 3], ["created_at", 2017-02-28 18:38:28 UTC], ["updated_at", 2017-02-28 18:38:28 UTC]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTriviaQuestion Load (0.2ms)[0m  [1m[34mSELECT  "trivia_questions".* FROM "trivia_questions" WHERE "trivia_questions"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "trivia_answers" ("answer", "trivia_question_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["answer", "The Cardnials"], ["trivia_question_id", 3], ["created_at", 2017-02-28 18:38:28 UTC], ["updated_at", 2017-02-28 18:38:28 UTC]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTriviaQuestion Load (0.1ms)[0m  [1m[34mSELECT  "trivia_questions".* FROM "trivia_questions" WHERE "trivia_questions"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "trivia_answers" ("answer", "trivia_question_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["answer", "The Yankees"], ["trivia_question_id", 3], ["created_at", 2017-02-28 18:38:28 UTC], ["updated_at", 2017-02-28 18:38:28 UTC]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTriviaQuestion Load (0.2ms)[0m  [1m[34mSELECT  "trivia_questions".* FROM "trivia_questions" WHERE "trivia_questions"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "trivia_answers" ("answer", "trivia_question_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["answer", "The Red Sox"], ["trivia_question_id", 3], ["created_at", 2017-02-28 18:38:28 UTC], ["updated_at", 2017-02-28 18:38:28 UTC]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTriviaQuestion Load (0.1ms)[0m  [1m[34mSELECT  "trivia_questions".* FROM "trivia_questions" WHERE "trivia_questions"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "truths" ("content", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "What is your biggest fear?"], ["created_at", 2017-02-28 18:38:28 UTC], ["updated_at", 2017-02-28 18:38:28 UTC]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "truths" ("content", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "Who is your celebrity crush?"], ["created_at", 2017-02-28 18:38:28 UTC], ["updated_at", 2017-02-28 18:38:28 UTC]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "truths" ("content", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "How old were you when you last peed the bed?"], ["created_at", 2017-02-28 18:38:28 UTC], ["updated_at", 2017-02-28 18:38:28 UTC]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "truths" ("content", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "What is your biggest fear?"], ["created_at", 2017-02-28 18:38:28 UTC], ["updated_at", 2017-02-28 18:38:28 UTC]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "dares" ("content", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "Text your ex - 'Sorry not sorry'"], ["created_at", 2017-02-28 18:38:28 UTC], ["updated_at", 2017-02-28 18:38:28 UTC]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "dares" ("content", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "Post a video on social media of you dancing to a Paris Hilton song"], ["created_at", 2017-02-28 18:38:28 UTC], ["updated_at", 2017-02-28 18:38:28 UTC]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "dares" ("content", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "Dance with the closest person to you of the oppiste sex for 2 mins"], ["created_at", 2017-02-28 18:38:28 UTC], ["updated_at", 2017-02-28 18:38:28 UTC]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "dares" ("content", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "Call a Chinnese restaurant and ask 8 different questions"], ["created_at", 2017-02-28 18:38:28 UTC], ["updated_at", 2017-02-28 18:38:28 UTC]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/" for 127.0.0.1 at 2017-02-28 13:38:41 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 3208ms (Views: 3205.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/truth_dare" for 127.0.0.1 at 2017-02-28 13:38:53 -0500
+Processing by TruthDareController#random as JSON
+  Parameters: {"truth_dare"=>{}}
+  [1m[36mTriviaQuestion Load (0.5ms)[0m  [1m[34mSELECT "trivia_questions".* FROM "trivia_questions"[0m
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT "trivia_questions".* FROM "trivia_questions"[0m
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT "trivia_questions".* FROM "trivia_questions"[0m
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT "trivia_questions".* FROM "trivia_questions"[0m
+  [1m[36mTruth Load (0.4ms)[0m  [1m[34mSELECT  "truths".* FROM "truths" WHERE "truths"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.1ms)[0m  [1m[34mSELECT  "truths".* FROM "truths" WHERE "truths"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mDare Load (0.7ms)[0m  [1m[34mSELECT  "dares".* FROM "dares" WHERE "dares"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "dares".* FROM "dares" WHERE "dares"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+Completed 200 OK in 46ms (Views: 1.2ms | ActiveRecord: 13.0ms)
+
+
+  [1m[36mTriviaQuestion Load (0.5ms)[0m  [1m[34mSELECT  "trivia_questions".* FROM "trivia_questions" WHERE "trivia_questions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTriviaQuestion Load (0.5ms)[0m  [1m[34mSELECT  "trivia_questions".* FROM "trivia_questions" WHERE "trivia_questions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTriviaAnswer Load (0.4ms)[0m  [1m[34mSELECT  "trivia_answers".* FROM "trivia_answers" WHERE "trivia_answers"."trivia_question_id" = $1 LIMIT $2[0m  [["trivia_question_id", 1], ["LIMIT", 1]]
+  [1m[36mTriviaQuestion Load (0.7ms)[0m  [1m[34mSELECT  "trivia_questions".* FROM "trivia_questions" WHERE "trivia_questions"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mTriviaAnswer Load (0.6ms)[0m  [1m[34mSELECT  "trivia_answers".* FROM "trivia_answers" WHERE "trivia_answers"."trivia_question_id" = $1 LIMIT $2[0m  [["trivia_question_id", 2], ["LIMIT", 1]]
+  [1m[36mTriviaQuestion Load (0.5ms)[0m  [1m[34mSELECT  "trivia_questions".* FROM "trivia_questions" WHERE "trivia_questions"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mTriviaQuestion Load (0.6ms)[0m  [1m[34mSELECT  "trivia_questions".* FROM "trivia_questions" WHERE "trivia_questions"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mTriviaAnswer Load (0.3ms)[0m  [1m[34mSELECT "trivia_answers".* FROM "trivia_answers" WHERE "trivia_answers"."trivia_question_id" = $1[0m  [["trivia_question_id", 2]]
+  [1m[36mTriviaAnswer Load (0.3ms)[0m  [1m[34mSELECT  "trivia_answers".* FROM "trivia_answers" WHERE "trivia_answers"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mTriviaAnswer Load (0.2ms)[0m  [1m[34mSELECT  "trivia_answers".* FROM "trivia_answers" WHERE "trivia_answers"."trivia_question_id" = $1 LIMIT $2[0m  [["trivia_question_id", 2], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.9ms)[0m  [1m[33mUPDATE "trivia_answers" SET "trivia_question_id" = $1, "updated_at" = $2 WHERE "trivia_answers"."id" = $3[0m  [["trivia_question_id", nil], ["updated_at", 2017-02-28 18:42:28 UTC], ["id", 5]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/" for 127.0.0.1 at 2017-02-28 13:43:07 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 94ms (Views: 92.6ms | ActiveRecord: 0.0ms)
+
+
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", :environment]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", :environment]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", :environment]]
+  [1m[35m (120.1ms)[0m  [1m[35mDROP DATABASE IF EXISTS "project_development"[0m
+  [1m[35m (116.6ms)[0m  [1m[35mDROP DATABASE IF EXISTS "project_test"[0m
+  [1m[35m (9.4ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying PRIMARY KEY)[0m
+  [1m[35m (6.0ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_try_advisory_lock(279088437195799245);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateTriviaQuestions (20170215192522)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (7.8ms)[0m  [1m[35mCREATE TABLE "trivia_questions" ("id" serial primary key, "category" character varying, "question" character varying, "trivia_answer_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170215192522"]]
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateTriviaAnswers (20170215192533)
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (7.8ms)[0m  [1m[35mCREATE TABLE "trivia_answers" ("id" serial primary key, "answer" character varying, "trivia_question_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35mSQL (1.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170215192533"]]
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateTruths (20170221154002)
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (8.8ms)[0m  [1m[35mCREATE TABLE "truths" ("id" serial primary key, "content" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170221154002"]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateDares (20170221154008)
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (7.2ms)[0m  [1m[35mCREATE TABLE "dares" ("id" serial primary key, "content" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170221154008"]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.7ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", 2017-02-28 18:52:00 UTC], ["updated_at", 2017-02-28 18:52:00 UTC]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(279088437195799245)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "trivia_questions" ("category", "question", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["category", "sports"], ["question", "What is the name of the Super Bowl trophy?"], ["created_at", 2017-02-28 18:52:06 UTC], ["updated_at", 2017-02-28 18:52:06 UTC]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTriviaQuestion Load (0.3ms)[0m  [1m[34mSELECT  "trivia_questions".* FROM "trivia_questions" WHERE "trivia_questions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "trivia_answers" ("answer", "trivia_question_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["answer", "The Lombardi Trophy"], ["trivia_question_id", 1], ["created_at", 2017-02-28 18:52:06 UTC], ["updated_at", 2017-02-28 18:52:06 UTC]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTriviaQuestion Load (0.2ms)[0m  [1m[34mSELECT  "trivia_questions".* FROM "trivia_questions" WHERE "trivia_questions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "trivia_answers" ("answer", "trivia_question_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["answer", "The Champion's Trophy"], ["trivia_question_id", 1], ["created_at", 2017-02-28 18:52:06 UTC], ["updated_at", 2017-02-28 18:52:06 UTC]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTriviaQuestion Load (0.2ms)[0m  [1m[34mSELECT  "trivia_questions".* FROM "trivia_questions" WHERE "trivia_questions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "trivia_answers" ("answer", "trivia_question_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["answer", "The Super Bowl Trophy"], ["trivia_question_id", 1], ["created_at", 2017-02-28 18:52:06 UTC], ["updated_at", 2017-02-28 18:52:06 UTC]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTriviaQuestion Load (0.2ms)[0m  [1m[34mSELECT  "trivia_questions".* FROM "trivia_questions" WHERE "trivia_questions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "trivia_answers" ("answer", "trivia_question_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["answer", "The Golden Ball"], ["trivia_question_id", 1], ["created_at", 2017-02-28 18:52:06 UTC], ["updated_at", 2017-02-28 18:52:06 UTC]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTriviaQuestion Load (0.4ms)[0m  [1m[34mSELECT  "trivia_questions".* FROM "trivia_questions" WHERE "trivia_questions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTriviaAnswer Load (0.2ms)[0m  [1m[34mSELECT  "trivia_answers".* FROM "trivia_answers" WHERE "trivia_answers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTriviaAnswer Load (0.2ms)[0m  [1m[34mSELECT  "trivia_answers".* FROM "trivia_answers" WHERE "trivia_answers"."trivia_question_id" = $1 LIMIT $2[0m  [["trivia_question_id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "trivia_questions" ("category", "question", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["category", "sports"], ["question", "What basketball player averaged a tripple double in a season?"], ["created_at", 2017-02-28 18:52:06 UTC], ["updated_at", 2017-02-28 18:52:06 UTC]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTriviaQuestion Load (0.2ms)[0m  [1m[34mSELECT  "trivia_questions".* FROM "trivia_questions" WHERE "trivia_questions"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "trivia_answers" ("answer", "trivia_question_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["answer", "Michael Jordan"], ["trivia_question_id", 2], ["created_at", 2017-02-28 18:52:06 UTC], ["updated_at", 2017-02-28 18:52:06 UTC]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTriviaQuestion Load (0.2ms)[0m  [1m[34mSELECT  "trivia_questions".* FROM "trivia_questions" WHERE "trivia_questions"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "trivia_answers" ("answer", "trivia_question_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["answer", "Oscar Robinson"], ["trivia_question_id", 2], ["created_at", 2017-02-28 18:52:06 UTC], ["updated_at", 2017-02-28 18:52:06 UTC]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTriviaQuestion Load (0.2ms)[0m  [1m[34mSELECT  "trivia_questions".* FROM "trivia_questions" WHERE "trivia_questions"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "trivia_answers" ("answer", "trivia_question_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["answer", "Bill Russel"], ["trivia_question_id", 2], ["created_at", 2017-02-28 18:52:06 UTC], ["updated_at", 2017-02-28 18:52:06 UTC]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTriviaQuestion Load (0.2ms)[0m  [1m[34mSELECT  "trivia_questions".* FROM "trivia_questions" WHERE "trivia_questions"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "trivia_answers" ("answer", "trivia_question_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["answer", "Lebron James"], ["trivia_question_id", 2], ["created_at", 2017-02-28 18:52:06 UTC], ["updated_at", 2017-02-28 18:52:06 UTC]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTriviaQuestion Load (0.2ms)[0m  [1m[34mSELECT  "trivia_questions".* FROM "trivia_questions" WHERE "trivia_questions"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mTriviaAnswer Load (0.2ms)[0m  [1m[34mSELECT  "trivia_answers".* FROM "trivia_answers" WHERE "trivia_answers"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mTriviaAnswer Load (0.3ms)[0m  [1m[34mSELECT  "trivia_answers".* FROM "trivia_answers" WHERE "trivia_answers"."trivia_question_id" = $1 LIMIT $2[0m  [["trivia_question_id", 2], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "trivia_answers" SET "trivia_question_id" = $1, "updated_at" = $2 WHERE "trivia_answers"."id" = $3[0m  [["trivia_question_id", nil], ["updated_at", 2017-02-28 18:52:06 UTC], ["id", 5]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "trivia_questions" ("category", "question", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["category", "sports"], ["question", "What baseball team has the most World Series Victories?"], ["created_at", 2017-02-28 18:52:06 UTC], ["updated_at", 2017-02-28 18:52:06 UTC]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTriviaQuestion Load (0.2ms)[0m  [1m[34mSELECT  "trivia_questions".* FROM "trivia_questions" WHERE "trivia_questions"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "trivia_answers" ("answer", "trivia_question_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["answer", "The Mets"], ["trivia_question_id", 3], ["created_at", 2017-02-28 18:52:06 UTC], ["updated_at", 2017-02-28 18:52:06 UTC]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTriviaQuestion Load (0.2ms)[0m  [1m[34mSELECT  "trivia_questions".* FROM "trivia_questions" WHERE "trivia_questions"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "trivia_answers" ("answer", "trivia_question_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["answer", "The Cardnials"], ["trivia_question_id", 3], ["created_at", 2017-02-28 18:52:06 UTC], ["updated_at", 2017-02-28 18:52:06 UTC]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTriviaQuestion Load (0.2ms)[0m  [1m[34mSELECT  "trivia_questions".* FROM "trivia_questions" WHERE "trivia_questions"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "trivia_answers" ("answer", "trivia_question_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["answer", "The Yankees"], ["trivia_question_id", 3], ["created_at", 2017-02-28 18:52:06 UTC], ["updated_at", 2017-02-28 18:52:06 UTC]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTriviaQuestion Load (0.2ms)[0m  [1m[34mSELECT  "trivia_questions".* FROM "trivia_questions" WHERE "trivia_questions"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "trivia_answers" ("answer", "trivia_question_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["answer", "The Red Sox"], ["trivia_question_id", 3], ["created_at", 2017-02-28 18:52:06 UTC], ["updated_at", 2017-02-28 18:52:06 UTC]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTriviaQuestion Load (0.2ms)[0m  [1m[34mSELECT  "trivia_questions".* FROM "trivia_questions" WHERE "trivia_questions"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTriviaAnswer Load (0.2ms)[0m  [1m[34mSELECT  "trivia_answers".* FROM "trivia_answers" WHERE "trivia_answers"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[36mTriviaAnswer Load (0.2ms)[0m  [1m[34mSELECT  "trivia_answers".* FROM "trivia_answers" WHERE "trivia_answers"."trivia_question_id" = $1 LIMIT $2[0m  [["trivia_question_id", 3], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "trivia_answers" SET "trivia_question_id" = $1, "updated_at" = $2 WHERE "trivia_answers"."id" = $3[0m  [["trivia_question_id", nil], ["updated_at", 2017-02-28 18:52:06 UTC], ["id", 9]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "truths" ("content", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "What is your biggest fear?"], ["created_at", 2017-02-28 18:52:06 UTC], ["updated_at", 2017-02-28 18:52:06 UTC]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "truths" ("content", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "Who is your celebrity crush?"], ["created_at", 2017-02-28 18:52:06 UTC], ["updated_at", 2017-02-28 18:52:06 UTC]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "truths" ("content", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "How old were you when you last peed the bed?"], ["created_at", 2017-02-28 18:52:06 UTC], ["updated_at", 2017-02-28 18:52:06 UTC]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "truths" ("content", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "What is your biggest fear?"], ["created_at", 2017-02-28 18:52:06 UTC], ["updated_at", 2017-02-28 18:52:06 UTC]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "dares" ("content", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "Text your ex - 'Sorry not sorry'"], ["created_at", 2017-02-28 18:52:06 UTC], ["updated_at", 2017-02-28 18:52:06 UTC]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "dares" ("content", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "Post a video on social media of you dancing to a Paris Hilton song"], ["created_at", 2017-02-28 18:52:06 UTC], ["updated_at", 2017-02-28 18:52:06 UTC]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "dares" ("content", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "Dance with the closest person to you of the oppiste sex for 2 mins"], ["created_at", 2017-02-28 18:52:06 UTC], ["updated_at", 2017-02-28 18:52:06 UTC]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "dares" ("content", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "Call a Chinnese restaurant and ask 8 different questions"], ["created_at", 2017-02-28 18:52:06 UTC], ["updated_at", 2017-02-28 18:52:06 UTC]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTriviaQuestion Load (0.5ms)[0m  [1m[34mSELECT  "trivia_questions".* FROM "trivia_questions" WHERE "trivia_questions"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mTriviaAnswer Load (0.5ms)[0m  [1m[34mSELECT  "trivia_answers".* FROM "trivia_answers" WHERE "trivia_answers"."trivia_question_id" = $1 LIMIT $2[0m  [["trivia_question_id", 2], ["LIMIT", 1]]
+  [1m[36mTriviaQuestion Load (0.5ms)[0m  [1m[34mSELECT  "trivia_questions".* FROM "trivia_questions" WHERE "trivia_questions"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTriviaAnswer Load (0.5ms)[0m  [1m[34mSELECT  "trivia_answers".* FROM "trivia_answers" WHERE "trivia_answers"."trivia_question_id" = $1 LIMIT $2[0m  [["trivia_question_id", 3], ["LIMIT", 1]]
+  [1m[36mTriviaAnswer Load (0.4ms)[0m  [1m[34mSELECT  "trivia_answers".* FROM "trivia_answers" WHERE "trivia_answers"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[36mTriviaQuestion Load (0.6ms)[0m  [1m[34mSELECT  "trivia_questions".* FROM "trivia_questions" WHERE "trivia_questions"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTriviaAnswer Load (0.3ms)[0m  [1m[34mSELECT  "trivia_answers".* FROM "trivia_answers" WHERE "trivia_answers"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[36mTriviaAnswer Load (0.3ms)[0m  [1m[34mSELECT  "trivia_answers".* FROM "trivia_answers" WHERE "trivia_answers"."trivia_question_id" = $1 LIMIT $2[0m  [["trivia_question_id", 3], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE "trivia_answers" SET "trivia_question_id" = $1, "updated_at" = $2 WHERE "trivia_answers"."id" = $3[0m  [["trivia_question_id", nil], ["updated_at", 2017-02-28 18:53:30 UTC], ["id", 10]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTriviaQuestion Load (0.5ms)[0m  [1m[34mSELECT  "trivia_questions".* FROM "trivia_questions" WHERE "trivia_questions"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTriviaAnswer Load (0.3ms)[0m  [1m[34mSELECT  "trivia_answers".* FROM "trivia_answers" WHERE "trivia_answers"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[36mTriviaAnswer Load (0.3ms)[0m  [1m[34mSELECT  "trivia_answers".* FROM "trivia_answers" WHERE "trivia_answers"."trivia_question_id" = $1 LIMIT $2[0m  [["trivia_question_id", 3], ["LIMIT", 1]]
+  [1m[36mTriviaQuestion Load (0.4ms)[0m  [1m[34mSELECT  "trivia_questions".* FROM "trivia_questions" WHERE "trivia_questions"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTriviaQuestion Load (0.5ms)[0m  [1m[34mSELECT  "trivia_questions".* FROM "trivia_questions" WHERE "trivia_questions"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTriviaAnswer Load (0.4ms)[0m  [1m[34mSELECT  "trivia_answers".* FROM "trivia_answers" WHERE "trivia_answers"."trivia_question_id" = $1 LIMIT $2[0m  [["trivia_question_id", 3], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", :environment]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", :environment]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", :environment]]
+  [1m[35m (5046.8ms)[0m  [1m[35mDROP DATABASE IF EXISTS "project_development"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", :environment]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", :environment]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", :environment]]
+  [1m[35m (120.5ms)[0m  [1m[35mDROP DATABASE IF EXISTS "project_development"[0m
+  [1m[35m (118.4ms)[0m  [1m[35mDROP DATABASE IF EXISTS "project_test"[0m
+  [1m[35m (7.8ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying PRIMARY KEY)[0m
+  [1m[35m (4.8ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(279088437195799245);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateTriviaQuestions (20170215192522)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (6.6ms)[0m  [1m[35mCREATE TABLE "trivia_questions" ("id" serial primary key, "category" character varying, "question" character varying, "trivia_answer_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170215192522"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateTriviaAnswers (20170215192533)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (5.3ms)[0m  [1m[35mCREATE TABLE "trivia_answers" ("id" serial primary key, "answer" character varying, "trivia_question_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170215192533"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateTruths (20170221154002)
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (7.8ms)[0m  [1m[35mCREATE TABLE "truths" ("id" serial primary key, "content" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170221154002"]]
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateDares (20170221154008)
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (6.9ms)[0m  [1m[35mCREATE TABLE "dares" ("id" serial primary key, "content" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170221154008"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", 2017-02-28 18:57:09 UTC], ["updated_at", 2017-02-28 18:57:09 UTC]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(279088437195799245)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "trivia_questions" ("category", "question", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["category", "sports"], ["question", "What is the name of the Super Bowl trophy?"], ["created_at", 2017-02-28 18:57:19 UTC], ["updated_at", 2017-02-28 18:57:19 UTC]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTriviaQuestion Load (0.3ms)[0m  [1m[34mSELECT  "trivia_questions".* FROM "trivia_questions" WHERE "trivia_questions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "trivia_answers" ("answer", "trivia_question_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["answer", "The Lombardi Trophy"], ["trivia_question_id", 1], ["created_at", 2017-02-28 18:57:19 UTC], ["updated_at", 2017-02-28 18:57:19 UTC]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTriviaQuestion Load (0.2ms)[0m  [1m[34mSELECT  "trivia_questions".* FROM "trivia_questions" WHERE "trivia_questions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "trivia_answers" ("answer", "trivia_question_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["answer", "The Champion's Trophy"], ["trivia_question_id", 1], ["created_at", 2017-02-28 18:57:19 UTC], ["updated_at", 2017-02-28 18:57:19 UTC]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTriviaQuestion Load (0.4ms)[0m  [1m[34mSELECT  "trivia_questions".* FROM "trivia_questions" WHERE "trivia_questions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "trivia_answers" ("answer", "trivia_question_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["answer", "The Super Bowl Trophy"], ["trivia_question_id", 1], ["created_at", 2017-02-28 18:57:19 UTC], ["updated_at", 2017-02-28 18:57:19 UTC]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTriviaQuestion Load (0.3ms)[0m  [1m[34mSELECT  "trivia_questions".* FROM "trivia_questions" WHERE "trivia_questions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "trivia_answers" ("answer", "trivia_question_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["answer", "The Golden Ball"], ["trivia_question_id", 1], ["created_at", 2017-02-28 18:57:19 UTC], ["updated_at", 2017-02-28 18:57:19 UTC]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTriviaQuestion Load (0.3ms)[0m  [1m[34mSELECT  "trivia_questions".* FROM "trivia_questions" WHERE "trivia_questions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTriviaAnswer Load (0.2ms)[0m  [1m[34mSELECT  "trivia_answers".* FROM "trivia_answers" WHERE "trivia_answers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTriviaAnswer Load (0.2ms)[0m  [1m[34mSELECT  "trivia_answers".* FROM "trivia_answers" WHERE "trivia_answers"."trivia_question_id" = $1 LIMIT $2[0m  [["trivia_question_id", 1], ["LIMIT", 1]]
+  [1m[36mTriviaQuestion Load (0.3ms)[0m  [1m[34mSELECT  "trivia_questions".* FROM "trivia_questions" WHERE "trivia_questions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "trivia_questions" ("category", "question", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["category", "sports"], ["question", "What basketball player averaged a tripple double in a season?"], ["created_at", 2017-02-28 18:57:19 UTC], ["updated_at", 2017-02-28 18:57:19 UTC]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTriviaQuestion Load (0.1ms)[0m  [1m[34mSELECT  "trivia_questions".* FROM "trivia_questions" WHERE "trivia_questions"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "trivia_answers" ("answer", "trivia_question_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["answer", "Michael Jordan"], ["trivia_question_id", 2], ["created_at", 2017-02-28 18:57:19 UTC], ["updated_at", 2017-02-28 18:57:19 UTC]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTriviaQuestion Load (0.1ms)[0m  [1m[34mSELECT  "trivia_questions".* FROM "trivia_questions" WHERE "trivia_questions"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "trivia_answers" ("answer", "trivia_question_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["answer", "Oscar Robinson"], ["trivia_question_id", 2], ["created_at", 2017-02-28 18:57:19 UTC], ["updated_at", 2017-02-28 18:57:19 UTC]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTriviaQuestion Load (0.2ms)[0m  [1m[34mSELECT  "trivia_questions".* FROM "trivia_questions" WHERE "trivia_questions"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "trivia_answers" ("answer", "trivia_question_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["answer", "Bill Russel"], ["trivia_question_id", 2], ["created_at", 2017-02-28 18:57:19 UTC], ["updated_at", 2017-02-28 18:57:19 UTC]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTriviaQuestion Load (0.3ms)[0m  [1m[34mSELECT  "trivia_questions".* FROM "trivia_questions" WHERE "trivia_questions"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "trivia_answers" ("answer", "trivia_question_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["answer", "Lebron James"], ["trivia_question_id", 2], ["created_at", 2017-02-28 18:57:19 UTC], ["updated_at", 2017-02-28 18:57:19 UTC]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTriviaQuestion Load (0.2ms)[0m  [1m[34mSELECT  "trivia_questions".* FROM "trivia_questions" WHERE "trivia_questions"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mTriviaAnswer Load (0.2ms)[0m  [1m[34mSELECT  "trivia_answers".* FROM "trivia_answers" WHERE "trivia_answers"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mTriviaAnswer Load (0.2ms)[0m  [1m[34mSELECT  "trivia_answers".* FROM "trivia_answers" WHERE "trivia_answers"."trivia_question_id" = $1 LIMIT $2[0m  [["trivia_question_id", 2], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "trivia_answers" SET "trivia_question_id" = $1, "updated_at" = $2 WHERE "trivia_answers"."id" = $3[0m  [["trivia_question_id", nil], ["updated_at", 2017-02-28 18:57:19 UTC], ["id", 5]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTriviaQuestion Load (0.2ms)[0m  [1m[34mSELECT  "trivia_questions".* FROM "trivia_questions" WHERE "trivia_questions"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "trivia_questions" ("category", "question", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["category", "sports"], ["question", "What baseball team has the most World Series Victories?"], ["created_at", 2017-02-28 18:57:19 UTC], ["updated_at", 2017-02-28 18:57:19 UTC]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTriviaQuestion Load (0.1ms)[0m  [1m[34mSELECT  "trivia_questions".* FROM "trivia_questions" WHERE "trivia_questions"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "trivia_answers" ("answer", "trivia_question_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["answer", "The Mets"], ["trivia_question_id", 3], ["created_at", 2017-02-28 18:57:19 UTC], ["updated_at", 2017-02-28 18:57:19 UTC]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTriviaQuestion Load (0.1ms)[0m  [1m[34mSELECT  "trivia_questions".* FROM "trivia_questions" WHERE "trivia_questions"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "trivia_answers" ("answer", "trivia_question_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["answer", "The Cardnials"], ["trivia_question_id", 3], ["created_at", 2017-02-28 18:57:19 UTC], ["updated_at", 2017-02-28 18:57:19 UTC]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTriviaQuestion Load (0.2ms)[0m  [1m[34mSELECT  "trivia_questions".* FROM "trivia_questions" WHERE "trivia_questions"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "trivia_answers" ("answer", "trivia_question_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["answer", "The Yankees"], ["trivia_question_id", 3], ["created_at", 2017-02-28 18:57:19 UTC], ["updated_at", 2017-02-28 18:57:19 UTC]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTriviaQuestion Load (0.1ms)[0m  [1m[34mSELECT  "trivia_questions".* FROM "trivia_questions" WHERE "trivia_questions"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "trivia_answers" ("answer", "trivia_question_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["answer", "The Red Sox"], ["trivia_question_id", 3], ["created_at", 2017-02-28 18:57:19 UTC], ["updated_at", 2017-02-28 18:57:19 UTC]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTriviaQuestion Load (0.2ms)[0m  [1m[34mSELECT  "trivia_questions".* FROM "trivia_questions" WHERE "trivia_questions"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTriviaAnswer Load (0.2ms)[0m  [1m[34mSELECT  "trivia_answers".* FROM "trivia_answers" WHERE "trivia_answers"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[36mTriviaAnswer Load (0.2ms)[0m  [1m[34mSELECT  "trivia_answers".* FROM "trivia_answers" WHERE "trivia_answers"."trivia_question_id" = $1 LIMIT $2[0m  [["trivia_question_id", 3], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "trivia_answers" SET "trivia_question_id" = $1, "updated_at" = $2 WHERE "trivia_answers"."id" = $3[0m  [["trivia_question_id", nil], ["updated_at", 2017-02-28 18:57:19 UTC], ["id", 9]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTriviaQuestion Load (0.2ms)[0m  [1m[34mSELECT  "trivia_questions".* FROM "trivia_questions" WHERE "trivia_questions"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "truths" ("content", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "What is your biggest fear?"], ["created_at", 2017-02-28 18:57:19 UTC], ["updated_at", 2017-02-28 18:57:19 UTC]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "truths" ("content", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "Who is your celebrity crush?"], ["created_at", 2017-02-28 18:57:19 UTC], ["updated_at", 2017-02-28 18:57:19 UTC]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "truths" ("content", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "How old were you when you last peed the bed?"], ["created_at", 2017-02-28 18:57:19 UTC], ["updated_at", 2017-02-28 18:57:19 UTC]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "truths" ("content", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "What is your biggest fear?"], ["created_at", 2017-02-28 18:57:19 UTC], ["updated_at", 2017-02-28 18:57:19 UTC]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "dares" ("content", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "Text your ex - 'Sorry not sorry'"], ["created_at", 2017-02-28 18:57:19 UTC], ["updated_at", 2017-02-28 18:57:19 UTC]]
+  [1m[35m (1.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "dares" ("content", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "Post a video on social media of you dancing to a Paris Hilton song"], ["created_at", 2017-02-28 18:57:19 UTC], ["updated_at", 2017-02-28 18:57:19 UTC]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "dares" ("content", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "Dance with the closest person to you of the oppiste sex for 2 mins"], ["created_at", 2017-02-28 18:57:19 UTC], ["updated_at", 2017-02-28 18:57:19 UTC]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "dares" ("content", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "Call a Chinnese restaurant and ask 8 different questions"], ["created_at", 2017-02-28 18:57:19 UTC], ["updated_at", 2017-02-28 18:57:19 UTC]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTriviaQuestion Load (0.5ms)[0m  [1m[34mSELECT  "trivia_questions".* FROM "trivia_questions" WHERE "trivia_questions"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mTriviaQuestion Load (0.8ms)[0m  [1m[34mSELECT  "trivia_questions".* FROM "trivia_questions" WHERE "trivia_questions"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mTriviaAnswer Load (0.3ms)[0m  [1m[34mSELECT  "trivia_answers".* FROM "trivia_answers" WHERE "trivia_answers"."trivia_question_id" = $1 LIMIT $2[0m  [["trivia_question_id", 2], ["LIMIT", 1]]
+  [1m[36mTriviaQuestion Load (0.3ms)[0m  [1m[34mSELECT  "trivia_questions".* FROM "trivia_questions" WHERE "trivia_questions"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTriviaAnswer Load (0.5ms)[0m  [1m[34mSELECT  "trivia_answers".* FROM "trivia_answers" WHERE "trivia_answers"."trivia_question_id" = $1 LIMIT $2[0m  [["trivia_question_id", 3], ["LIMIT", 1]]
+  [1m[36mTriviaAnswer Load (0.4ms)[0m  [1m[34mSELECT  "trivia_answers".* FROM "trivia_answers" WHERE "trivia_answers"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE "trivia_answers" SET "trivia_question_id" = $1, "updated_at" = $2 WHERE "trivia_answers"."id" = $3[0m  [["trivia_question_id", nil], ["updated_at", 2017-02-28 18:58:09 UTC], ["id", 10]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/" for 127.0.0.1 at 2017-02-28 14:08:24 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (8.1ms)
+Completed 500 Internal Server Error in 1755ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (SyntaxError: unknown: Unexpected token (5:17)
+  3 |     super();
+  4 |     this.state = {
+> 5 |       selectDare = false,
+    |                  ^
+  6 |       selectTruth = false,
+  7 |       truth: '',
+  8 |       dare: ''):
+    4:     <title>A</title>
+    5:     <%= csrf_meta_tags %>
+    6: 
+    7:     <%= stylesheet_link_tag    'application', media: 'all' %>
+    8:     <%= javascript_include_tag 'application' %>
+    9:     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+   10:   </head>
+  
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb___1149993040307025883_70167724292500'
+  Rendering /Users/paulduca/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/paulduca/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/paulduca/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.6ms)
+  Rendering /Users/paulduca/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/paulduca/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendering /Users/paulduca/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/paulduca/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/paulduca/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (79.3ms)
+Started GET "/truth_dare" for 127.0.0.1 at 2017-02-28 14:08:43 -0500
+Started GET "/" for 127.0.0.1 at 2017-02-28 14:08:53 -0500
+  
+SyntaxError (/Users/paulduca/Desktop/Projects_Practice_Reference/drink_up/app/controllers/truth_dare_controller.rb:5: syntax error, unexpected tIDENTIFIER, expecting '}'
+    render :json => {truth: arry[0] dare: arry[1]}
+                                        ^
+/Users/paulduca/Desktop/Projects_Practice_Reference/drink_up/app/controllers/truth_dare_controller.rb:5: syntax error, unexpected '}', expecting keyword_end):
+  
+app/controllers/truth_dare_controller.rb:5: syntax error, unexpected tIDENTIFIER, expecting '}'
+app/controllers/truth_dare_controller.rb:5: syntax error, unexpected '}', expecting keyword_end
+  Rendering /Users/paulduca/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/paulduca/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/paulduca/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.8ms)
+  Rendering /Users/paulduca/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/paulduca/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendering /Users/paulduca/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/paulduca/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/paulduca/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (68.5ms)
+Started GET "/" for 127.0.0.1 at 2017-02-28 14:08:53 -0500
+Processing by WelcomeController#index as HTML
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.4ms)
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 2141ms (Views: 2139.6ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 2161ms (Views: 2159.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-28 14:15:16 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 39ms (Views: 37.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/truth_dare" for 127.0.0.1 at 2017-02-28 14:15:23 -0500
+  
+SyntaxError (/Users/paulduca/Desktop/Projects_Practice_Reference/drink_up/app/controllers/truth_dare_controller.rb:5: syntax error, unexpected tIDENTIFIER, expecting '}'
+    render :json => {truth: arry[0] dare: arry[1]}
+                                        ^
+/Users/paulduca/Desktop/Projects_Practice_Reference/drink_up/app/controllers/truth_dare_controller.rb:5: syntax error, unexpected '}', expecting keyword_end):
+  
+app/controllers/truth_dare_controller.rb:5: syntax error, unexpected tIDENTIFIER, expecting '}'
+app/controllers/truth_dare_controller.rb:5: syntax error, unexpected '}', expecting keyword_end
+  Rendering /Users/paulduca/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/paulduca/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/paulduca/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.2ms)
+  Rendering /Users/paulduca/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/paulduca/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendering /Users/paulduca/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/paulduca/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/paulduca/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (62.3ms)
+Started GET "/" for 127.0.0.1 at 2017-02-28 14:15:52 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 62ms (Views: 60.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/truth_dare" for 127.0.0.1 at 2017-02-28 14:15:59 -0500
+Processing by TruthDareController#random as JSON
+  Parameters: {"truth_dare"=>{}}
+  [1m[36mTruth Load (0.7ms)[0m  [1m[34mSELECT "truths".* FROM "truths"[0m
+  [1m[36mDare Load (0.5ms)[0m  [1m[34mSELECT "dares".* FROM "dares"[0m
+  [1m[36mTruth Load (0.5ms)[0m  [1m[34mSELECT  "truths".* FROM "truths" WHERE "truths"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mDare Load (0.2ms)[0m  [1m[34mSELECT  "dares".* FROM "dares" WHERE "dares"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 80ms (Views: 1.0ms | ActiveRecord: 13.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-28 14:16:28 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 986ms (Views: 983.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/truth_dare" for 127.0.0.1 at 2017-02-28 14:16:36 -0500
+Processing by TruthDareController#random as JSON
+  Parameters: {"truth_dare"=>{}}
+  [1m[36mTruth Load (0.5ms)[0m  [1m[34mSELECT "truths".* FROM "truths"[0m
+  [1m[36mDare Load (0.7ms)[0m  [1m[34mSELECT "dares".* FROM "dares"[0m
+  [1m[36mTruth Load (0.2ms)[0m  [1m[34mSELECT  "truths".* FROM "truths" WHERE "truths"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mDare Load (0.2ms)[0m  [1m[34mSELECT  "dares".* FROM "dares" WHERE "dares"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+Completed 200 OK in 33ms (Views: 1.0ms | ActiveRecord: 10.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-28 14:21:43 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 996ms (Views: 994.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-28 14:23:09 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+Completed 500 Internal Server Error in 642ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (SyntaxError: unknown: Unexpected token (59:16)
+  57 |   render(){
+  58 |     let playing_dare = this.state.playing_dare
+> 59 |     let playing truth = this.state.playing_true
+     |                 ^
+  60 |     if(playing_dare){
+  61 |       return(
+  62 |         <h3>{this.state.dare}</h3>):
+     5:     <%= csrf_meta_tags %>
+     6: 
+     7:     <%= stylesheet_link_tag    'application', media: 'all' %>
+     8:     <%= javascript_include_tag 'application' %>
+     9:     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    10:   </head>
+    11: 
+  
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb___1149993040307025883_70167785918580'
+  Rendering /Users/paulduca/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/paulduca/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/paulduca/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.0ms)
+  Rendering /Users/paulduca/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/paulduca/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendering /Users/paulduca/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/paulduca/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/paulduca/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (77.8ms)
+Started GET "/" for 127.0.0.1 at 2017-02-28 14:23:24 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 1094ms (Views: 1092.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-28 14:25:19 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 58ms (Views: 56.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-28 14:25:39 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 979ms (Views: 977.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-28 14:27:02 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 1081ms (Views: 1079.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-28 14:29:39 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 954ms (Views: 952.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-28 14:31:05 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 988ms (Views: 986.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-28 14:32:11 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 958ms (Views: 956.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-28 14:33:23 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 1005ms (Views: 1003.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-28 14:35:17 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 1027ms (Views: 1025.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/truth_dare" for 127.0.0.1 at 2017-02-28 14:35:27 -0500
+Processing by TruthDareController#random as JSON
+  Parameters: {"truth_dare"=>{}}
+  [1m[36mTruth Load (0.3ms)[0m  [1m[34mSELECT "truths".* FROM "truths"[0m
+  [1m[36mDare Load (0.3ms)[0m  [1m[34mSELECT "dares".* FROM "dares"[0m
+  [1m[36mTruth Load (0.3ms)[0m  [1m[34mSELECT  "truths".* FROM "truths" WHERE "truths"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mDare Load (0.3ms)[0m  [1m[34mSELECT  "dares".* FROM "dares" WHERE "dares"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 26ms (Views: 0.7ms | ActiveRecord: 10.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-28 14:35:45 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 961ms (Views: 959.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/truth_dare" for 127.0.0.1 at 2017-02-28 14:35:53 -0500
+Processing by TruthDareController#random as JSON
+  Parameters: {"truth_dare"=>{}}
+  [1m[36mTruth Load (0.4ms)[0m  [1m[34mSELECT "truths".* FROM "truths"[0m
+  [1m[36mDare Load (0.3ms)[0m  [1m[34mSELECT "dares".* FROM "dares"[0m
+  [1m[36mTruth Load (0.3ms)[0m  [1m[34mSELECT  "truths".* FROM "truths" WHERE "truths"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mDare Load (0.3ms)[0m  [1m[34mSELECT  "dares".* FROM "dares" WHERE "dares"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+Completed 200 OK in 20ms (Views: 0.7ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-28 14:41:22 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 1129ms (Views: 1127.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/truth_dare" for 127.0.0.1 at 2017-02-28 14:41:30 -0500
+Processing by TruthDareController#random as JSON
+  Parameters: {"truth_dare"=>{}}
+  [1m[36mTruth Load (0.3ms)[0m  [1m[34mSELECT "truths".* FROM "truths"[0m
+  [1m[36mDare Load (0.3ms)[0m  [1m[34mSELECT "dares".* FROM "dares"[0m
+  [1m[36mTruth Load (0.3ms)[0m  [1m[34mSELECT  "truths".* FROM "truths" WHERE "truths"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mDare Load (0.2ms)[0m  [1m[34mSELECT  "dares".* FROM "dares" WHERE "dares"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+Completed 200 OK in 27ms (Views: 0.7ms | ActiveRecord: 7.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-28 14:42:34 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 993ms (Views: 990.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/truth_dare" for 127.0.0.1 at 2017-02-28 14:42:43 -0500
+Processing by TruthDareController#random as JSON
+  Parameters: {"truth_dare"=>{}}
+  [1m[36mTruth Load (0.3ms)[0m  [1m[34mSELECT "truths".* FROM "truths"[0m
+  [1m[36mDare Load (0.3ms)[0m  [1m[34mSELECT "dares".* FROM "dares"[0m
+  [1m[36mTruth Load (0.3ms)[0m  [1m[34mSELECT  "truths".* FROM "truths" WHERE "truths"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mDare Load (0.3ms)[0m  [1m[34mSELECT  "dares".* FROM "dares" WHERE "dares"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+Completed 200 OK in 20ms (Views: 0.7ms | ActiveRecord: 7.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-28 14:43:15 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 986ms (Views: 984.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/truth_dare" for 127.0.0.1 at 2017-02-28 14:43:23 -0500
+Processing by TruthDareController#random as JSON
+  Parameters: {"truth_dare"=>{}}
+  [1m[36mTruth Load (0.3ms)[0m  [1m[34mSELECT "truths".* FROM "truths"[0m
+  [1m[36mDare Load (0.3ms)[0m  [1m[34mSELECT "dares".* FROM "dares"[0m
+  [1m[36mTruth Load (0.5ms)[0m  [1m[34mSELECT  "truths".* FROM "truths" WHERE "truths"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mDare Load (1.3ms)[0m  [1m[34mSELECT  "dares".* FROM "dares" WHERE "dares"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+Completed 200 OK in 18ms (Views: 0.7ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-28 14:43:46 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 64ms (Views: 62.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/truth_dare" for 127.0.0.1 at 2017-02-28 14:43:53 -0500
+Processing by TruthDareController#random as JSON
+  Parameters: {"truth_dare"=>{}}
+  [1m[36mTruth Load (0.5ms)[0m  [1m[34mSELECT "truths".* FROM "truths"[0m
+  [1m[36mDare Load (0.5ms)[0m  [1m[34mSELECT "dares".* FROM "dares"[0m
+  [1m[36mTruth Load (0.4ms)[0m  [1m[34mSELECT  "truths".* FROM "truths" WHERE "truths"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mDare Load (0.4ms)[0m  [1m[34mSELECT  "dares".* FROM "dares" WHERE "dares"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 7ms (Views: 1.1ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-28 14:44:17 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 979ms (Views: 977.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/truth_dare" for 127.0.0.1 at 2017-02-28 14:44:25 -0500
+Processing by TruthDareController#random as JSON
+  Parameters: {"truth_dare"=>{}}
+  [1m[36mTruth Load (0.3ms)[0m  [1m[34mSELECT "truths".* FROM "truths"[0m
+  [1m[36mDare Load (0.3ms)[0m  [1m[34mSELECT "dares".* FROM "dares"[0m
+  [1m[36mTruth Load (0.3ms)[0m  [1m[34mSELECT  "truths".* FROM "truths" WHERE "truths"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mDare Load (0.3ms)[0m  [1m[34mSELECT  "dares".* FROM "dares" WHERE "dares"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+Completed 200 OK in 30ms (Views: 0.8ms | ActiveRecord: 9.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-28 14:44:55 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 62ms (Views: 60.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/truth_dare" for 127.0.0.1 at 2017-02-28 14:45:02 -0500
+Processing by TruthDareController#random as JSON
+  Parameters: {"truth_dare"=>{}}
+  [1m[36mTruth Load (0.3ms)[0m  [1m[34mSELECT "truths".* FROM "truths"[0m
+  [1m[36mDare Load (0.3ms)[0m  [1m[34mSELECT "dares".* FROM "dares"[0m
+  [1m[36mTruth Load (0.3ms)[0m  [1m[34mSELECT  "truths".* FROM "truths" WHERE "truths"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mDare Load (0.3ms)[0m  [1m[34mSELECT  "dares".* FROM "dares" WHERE "dares"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 30ms (Views: 0.9ms | ActiveRecord: 9.1ms)
+
+
+  [1m[36mActiveRecord::SchemaMigration Load (2.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", :environment]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", :environment]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", :environment]]
+  [1m[35m (131.0ms)[0m  [1m[35mDROP DATABASE IF EXISTS "project_development"[0m
+  [1m[35m (130.4ms)[0m  [1m[35mDROP DATABASE IF EXISTS "project_test"[0m
+  [1m[35m (9.4ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying PRIMARY KEY)[0m
+  [1m[35m (6.9ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_try_advisory_lock(279088437195799245);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateTriviaQuestions (20170215192522)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (6.3ms)[0m  [1m[35mCREATE TABLE "trivia_questions" ("id" serial primary key, "category" character varying, "question" character varying, "trivia_answer_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170215192522"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateTriviaAnswers (20170215192533)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (7.1ms)[0m  [1m[35mCREATE TABLE "trivia_answers" ("id" serial primary key, "answer" character varying, "trivia_question_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170215192533"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateTruths (20170221154002)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (5.4ms)[0m  [1m[35mCREATE TABLE "truths" ("id" serial primary key, "content" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170221154002"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateDares (20170221154008)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (6.2ms)[0m  [1m[35mCREATE TABLE "dares" ("id" serial primary key, "content" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170221154008"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateNeverHaveIEvers (20170228202024)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (6.1ms)[0m  [1m[35mCREATE TABLE "never_have_i_evers" ("id" serial primary key, "content" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170228202024"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", 2017-03-01 18:39:01 UTC], ["updated_at", 2017-03-01 18:39:01 UTC]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(279088437195799245)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "trivia_questions" ("category", "question", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["category", "sports"], ["question", "What is the name of the Super Bowl trophy?"], ["created_at", 2017-03-01 18:39:06 UTC], ["updated_at", 2017-03-01 18:39:06 UTC]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTriviaQuestion Load (0.4ms)[0m  [1m[34mSELECT  "trivia_questions".* FROM "trivia_questions" WHERE "trivia_questions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "trivia_answers" ("answer", "trivia_question_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["answer", "The Lombardi Trophy"], ["trivia_question_id", 1], ["created_at", 2017-03-01 18:39:06 UTC], ["updated_at", 2017-03-01 18:39:06 UTC]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTriviaQuestion Load (0.4ms)[0m  [1m[34mSELECT  "trivia_questions".* FROM "trivia_questions" WHERE "trivia_questions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "trivia_answers" ("answer", "trivia_question_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["answer", "The Champion's Trophy"], ["trivia_question_id", 1], ["created_at", 2017-03-01 18:39:06 UTC], ["updated_at", 2017-03-01 18:39:06 UTC]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTriviaQuestion Load (0.4ms)[0m  [1m[34mSELECT  "trivia_questions".* FROM "trivia_questions" WHERE "trivia_questions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "trivia_answers" ("answer", "trivia_question_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["answer", "The Super Bowl Trophy"], ["trivia_question_id", 1], ["created_at", 2017-03-01 18:39:06 UTC], ["updated_at", 2017-03-01 18:39:06 UTC]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTriviaQuestion Load (0.2ms)[0m  [1m[34mSELECT  "trivia_questions".* FROM "trivia_questions" WHERE "trivia_questions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "trivia_answers" ("answer", "trivia_question_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["answer", "The Golden Ball"], ["trivia_question_id", 1], ["created_at", 2017-03-01 18:39:06 UTC], ["updated_at", 2017-03-01 18:39:06 UTC]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTriviaQuestion Load (0.3ms)[0m  [1m[34mSELECT  "trivia_questions".* FROM "trivia_questions" WHERE "trivia_questions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTriviaAnswer Load (0.3ms)[0m  [1m[34mSELECT  "trivia_answers".* FROM "trivia_answers" WHERE "trivia_answers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTriviaAnswer Load (0.2ms)[0m  [1m[34mSELECT  "trivia_answers".* FROM "trivia_answers" WHERE "trivia_answers"."trivia_question_id" = $1 LIMIT $2[0m  [["trivia_question_id", 1], ["LIMIT", 1]]
+  [1m[36mTriviaQuestion Load (0.2ms)[0m  [1m[34mSELECT  "trivia_questions".* FROM "trivia_questions" WHERE "trivia_questions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "trivia_questions" ("category", "question", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["category", "sports"], ["question", "What basketball player averaged a tripple double in a season?"], ["created_at", 2017-03-01 18:39:06 UTC], ["updated_at", 2017-03-01 18:39:06 UTC]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTriviaQuestion Load (0.2ms)[0m  [1m[34mSELECT  "trivia_questions".* FROM "trivia_questions" WHERE "trivia_questions"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "trivia_answers" ("answer", "trivia_question_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["answer", "Michael Jordan"], ["trivia_question_id", 2], ["created_at", 2017-03-01 18:39:06 UTC], ["updated_at", 2017-03-01 18:39:06 UTC]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTriviaQuestion Load (0.2ms)[0m  [1m[34mSELECT  "trivia_questions".* FROM "trivia_questions" WHERE "trivia_questions"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "trivia_answers" ("answer", "trivia_question_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["answer", "Oscar Robinson"], ["trivia_question_id", 2], ["created_at", 2017-03-01 18:39:06 UTC], ["updated_at", 2017-03-01 18:39:06 UTC]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTriviaQuestion Load (0.1ms)[0m  [1m[34mSELECT  "trivia_questions".* FROM "trivia_questions" WHERE "trivia_questions"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "trivia_answers" ("answer", "trivia_question_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["answer", "Bill Russel"], ["trivia_question_id", 2], ["created_at", 2017-03-01 18:39:06 UTC], ["updated_at", 2017-03-01 18:39:06 UTC]]
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTriviaQuestion Load (0.2ms)[0m  [1m[34mSELECT  "trivia_questions".* FROM "trivia_questions" WHERE "trivia_questions"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "trivia_answers" ("answer", "trivia_question_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["answer", "Lebron James"], ["trivia_question_id", 2], ["created_at", 2017-03-01 18:39:06 UTC], ["updated_at", 2017-03-01 18:39:06 UTC]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTriviaQuestion Load (0.2ms)[0m  [1m[34mSELECT  "trivia_questions".* FROM "trivia_questions" WHERE "trivia_questions"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mTriviaAnswer Load (0.2ms)[0m  [1m[34mSELECT  "trivia_answers".* FROM "trivia_answers" WHERE "trivia_answers"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mTriviaAnswer Load (0.2ms)[0m  [1m[34mSELECT  "trivia_answers".* FROM "trivia_answers" WHERE "trivia_answers"."trivia_question_id" = $1 LIMIT $2[0m  [["trivia_question_id", 2], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "trivia_answers" SET "trivia_question_id" = $1, "updated_at" = $2 WHERE "trivia_answers"."id" = $3[0m  [["trivia_question_id", nil], ["updated_at", 2017-03-01 18:39:06 UTC], ["id", 5]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTriviaQuestion Load (0.2ms)[0m  [1m[34mSELECT  "trivia_questions".* FROM "trivia_questions" WHERE "trivia_questions"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "trivia_questions" ("category", "question", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["category", "sports"], ["question", "What baseball team has the most World Series Victories?"], ["created_at", 2017-03-01 18:39:06 UTC], ["updated_at", 2017-03-01 18:39:06 UTC]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTriviaQuestion Load (0.2ms)[0m  [1m[34mSELECT  "trivia_questions".* FROM "trivia_questions" WHERE "trivia_questions"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "trivia_answers" ("answer", "trivia_question_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["answer", "The Mets"], ["trivia_question_id", 3], ["created_at", 2017-03-01 18:39:06 UTC], ["updated_at", 2017-03-01 18:39:06 UTC]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTriviaQuestion Load (0.1ms)[0m  [1m[34mSELECT  "trivia_questions".* FROM "trivia_questions" WHERE "trivia_questions"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "trivia_answers" ("answer", "trivia_question_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["answer", "The Cardnials"], ["trivia_question_id", 3], ["created_at", 2017-03-01 18:39:06 UTC], ["updated_at", 2017-03-01 18:39:06 UTC]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTriviaQuestion Load (0.1ms)[0m  [1m[34mSELECT  "trivia_questions".* FROM "trivia_questions" WHERE "trivia_questions"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "trivia_answers" ("answer", "trivia_question_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["answer", "The Yankees"], ["trivia_question_id", 3], ["created_at", 2017-03-01 18:39:06 UTC], ["updated_at", 2017-03-01 18:39:06 UTC]]
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTriviaQuestion Load (0.2ms)[0m  [1m[34mSELECT  "trivia_questions".* FROM "trivia_questions" WHERE "trivia_questions"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "trivia_answers" ("answer", "trivia_question_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["answer", "The Red Sox"], ["trivia_question_id", 3], ["created_at", 2017-03-01 18:39:06 UTC], ["updated_at", 2017-03-01 18:39:06 UTC]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTriviaQuestion Load (0.2ms)[0m  [1m[34mSELECT  "trivia_questions".* FROM "trivia_questions" WHERE "trivia_questions"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTriviaAnswer Load (0.2ms)[0m  [1m[34mSELECT  "trivia_answers".* FROM "trivia_answers" WHERE "trivia_answers"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[36mTriviaAnswer Load (0.2ms)[0m  [1m[34mSELECT  "trivia_answers".* FROM "trivia_answers" WHERE "trivia_answers"."trivia_question_id" = $1 LIMIT $2[0m  [["trivia_question_id", 3], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "trivia_answers" SET "trivia_question_id" = $1, "updated_at" = $2 WHERE "trivia_answers"."id" = $3[0m  [["trivia_question_id", nil], ["updated_at", 2017-03-01 18:39:06 UTC], ["id", 9]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTriviaQuestion Load (0.2ms)[0m  [1m[34mSELECT  "trivia_questions".* FROM "trivia_questions" WHERE "trivia_questions"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "truths" ("content", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "What is your biggest fear?"], ["created_at", 2017-03-01 18:39:06 UTC], ["updated_at", 2017-03-01 18:39:06 UTC]]
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "truths" ("content", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "Who is your celebrity crush?"], ["created_at", 2017-03-01 18:39:06 UTC], ["updated_at", 2017-03-01 18:39:06 UTC]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "truths" ("content", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "How old were you when you last peed the bed?"], ["created_at", 2017-03-01 18:39:06 UTC], ["updated_at", 2017-03-01 18:39:06 UTC]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "truths" ("content", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "What is your biggest fear?"], ["created_at", 2017-03-01 18:39:06 UTC], ["updated_at", 2017-03-01 18:39:06 UTC]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "dares" ("content", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "Text your ex - 'Sorry not sorry'"], ["created_at", 2017-03-01 18:39:06 UTC], ["updated_at", 2017-03-01 18:39:06 UTC]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "dares" ("content", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "Post a video on social media of you dancing to a Paris Hilton song"], ["created_at", 2017-03-01 18:39:06 UTC], ["updated_at", 2017-03-01 18:39:06 UTC]]
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "dares" ("content", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "Dance with the closest person to you of the oppiste sex for 2 mins"], ["created_at", 2017-03-01 18:39:06 UTC], ["updated_at", 2017-03-01 18:39:06 UTC]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "dares" ("content", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "Call a Chinnese restaurant and ask 8 different questions"], ["created_at", 2017-03-01 18:39:06 UTC], ["updated_at", 2017-03-01 18:39:06 UTC]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "never_have_i_evers" ("content", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "Gone Streaking"], ["created_at", 2017-03-01 18:40:07 UTC], ["updated_at", 2017-03-01 18:40:07 UTC]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "never_have_i_evers" ("content", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "Pooped my pants after the age of 10"], ["created_at", 2017-03-01 18:40:37 UTC], ["updated_at", 2017-03-01 18:40:37 UTC]]
+  [1m[35m (3.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "never_have_i_evers" ("content", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "Left my debit card at the bar"], ["created_at", 2017-03-01 18:40:54 UTC], ["updated_at", 2017-03-01 18:40:54 UTC]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "never_have_i_evers" ("content", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "Had a one night stand"], ["created_at", 2017-03-01 18:41:07 UTC], ["updated_at", 2017-03-01 18:41:07 UTC]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/" for 127.0.0.1 at 2017-03-01 13:46:58 -0500
+Started GET "/" for 127.0.0.1 at 2017-03-01 13:46:58 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (9.6ms)
+  Rendered welcome/index.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 3557ms (Views: 3555.4ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 3607ms (Views: 3595.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-03-01 13:48:01 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 969ms (Views: 967.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/never_have_i_ever" for 127.0.0.1 at 2017-03-01 13:48:12 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/never_have_i_ever"):
+  
+actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.7.0) lib/puma/configuration.rb:226:in `call'
+puma (3.7.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.7.0) lib/puma/server.rb:415:in `process_client'
+puma (3.7.0) lib/puma/server.rb:275:in `block in run'
+puma (3.7.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /Users/paulduca/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/paulduca/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/paulduca/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered collection of /Users/paulduca/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [3 times] (11.0ms)
+  Rendered /Users/paulduca/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (19.8ms)
+  Rendering /Users/paulduca/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/paulduca/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/paulduca/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (124.7ms)
+Started GET "/" for 127.0.0.1 at 2017-03-01 13:50:13 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 66ms (Views: 64.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/never_have_i_ever" for 127.0.0.1 at 2017-03-01 13:50:20 -0500
+Processing by NeverHaveIEverController#random_NHIE as JSON
+  Parameters: {"never_have_i_ever"=>{}}
+  [1m[36mNeverHaveIEver Load (0.8ms)[0m  [1m[34mSELECT "never_have_i_evers".* FROM "never_have_i_evers"[0m
+  [1m[36mNeverHaveIEver Load (0.4ms)[0m  [1m[34mSELECT  "never_have_i_evers".* FROM "never_have_i_evers" WHERE "never_have_i_evers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 20ms (Views: 0.7ms | ActiveRecord: 7.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-03-01 13:52:15 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 1061ms (Views: 1059.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/never_have_i_ever" for 127.0.0.1 at 2017-03-01 13:52:24 -0500
+Processing by NeverHaveIEverController#random_NHIE as JSON
+  Parameters: {"never_have_i_ever"=>{}}
+  [1m[36mNeverHaveIEver Load (0.4ms)[0m  [1m[34mSELECT "never_have_i_evers".* FROM "never_have_i_evers"[0m
+  [1m[36mNeverHaveIEver Load (0.2ms)[0m  [1m[34mSELECT  "never_have_i_evers".* FROM "never_have_i_evers" WHERE "never_have_i_evers"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+Completed 200 OK in 10ms (Views: 0.6ms | ActiveRecord: 8.8ms)
+
+

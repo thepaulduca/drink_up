@@ -1,0 +1,10 @@
+button {
+  margin: 100px;
+  width: 100px;
+  height: 70px;
+  position: absolute;
+}
+
+.wrapper {
+    text-align: center;
+}

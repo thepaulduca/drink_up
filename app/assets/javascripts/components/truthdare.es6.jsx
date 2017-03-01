@@ -2,11 +2,13 @@ class TruthDare extends React.Component {
   constructor() {
     super();
     this.state = {
-      truth1: '',
-      truth2: '',
-      dare1: '',
-      dare2: ''
-    }
+      playing_truth: false,
+      playing_dare: false,
+      truth: '',
+      dare: ''
+    };
+    this.showTruth = this.showTruth.bind(this);
+    this.showDare = this.showDare.bind(this);
   }
 
   componentDidMount(){
@@ -37,21 +39,49 @@ class TruthDare extends React.Component {
 
   updateTruthDare(data){
     this.setState({
-      truth1: data.truth1.content,
-      truth2: data.truth2.content,
-      dare1: data.dare1.content,
-      dare2: data.dare2.content
+      truth: data.truth.content,
+      dare: data.dare.content,
     });
   }
 
+  showTruth(){
+    this.setState({
+      playing_truth: true
+    })
+  }
+
+  showDare(){
+    this.setState({
+      playing_dare: true
+    })
+  }
+
   render(){
-    return(
-      <div className="container">
-        <h3>{this.state.truth1}</h3>
-        <h3>{this.state.truth2}</h3>
-        <h3>{this.state.dare1}</h3>
-        <h3>{this.state.dare2}</h3>
-      </div>
-    )
+    let playing_dare = this.state.playing_dare
+    let playing_truth = this.state.playing_truth
+    if(playing_dare){
+      return(
+        <div className="wrapper">
+          <h3>{this.state.dare}</h3>
+        </div>
+      )
+    } else if (playing_truth) {
+      return(
+        <div className="wrapper">
+          <h3>{this.state.truth}</h3>
+        </div>
+        )
+    } else {
+      return(
+        <div className="container">
+          <div className="Wrapper">
+            <button onClick={this.showTruth}>Truth</button>
+          </div>
+          <div className="wrapper">
+            <button onClick={this.showDare}>Dare</button>
+          </div>
+        </div>
+      )
+    }
   }
 }

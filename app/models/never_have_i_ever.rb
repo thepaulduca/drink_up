@@ -1,0 +1,2 @@
+class NeverHaveIEver < ApplicationRecord
+end
