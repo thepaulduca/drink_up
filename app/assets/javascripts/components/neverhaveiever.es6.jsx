@@ -35,6 +35,9 @@ class NeverHaveIEver extends React.Component {
     this.setState({
       haveIEver: data.never_have_i_ever.content
     });
+    setTimeout(function(){
+      this.props.gameHandler(null)
+    }.bind(this), 3000);
   }
 
   render(){

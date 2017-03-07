@@ -2844,3 +2844,225 @@ Processing by NeverHaveIEverController#random_NHIE as JSON
 Completed 200 OK in 10ms (Views: 0.6ms | ActiveRecord: 8.8ms)
 
 
+Started GET "/" for 127.0.0.1 at 2017-03-02 14:56:18 -0500
+Started GET "/" for 127.0.0.1 at 2017-03-02 14:56:18 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (1.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (2.7ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (9.2ms)
+  Rendered welcome/index.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 1007ms (Views: 1005.2ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 1010ms (Views: 1007.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/never_have_i_ever" for 127.0.0.1 at 2017-03-02 14:56:30 -0500
+Processing by NeverHaveIEverController#random_NHIE as JSON
+  Parameters: {"never_have_i_ever"=>{}}
+  [1m[36mNeverHaveIEver Load (0.5ms)[0m  [1m[34mSELECT "never_have_i_evers".* FROM "never_have_i_evers"[0m
+  [1m[36mNeverHaveIEver Load (0.3ms)[0m  [1m[34mSELECT  "never_have_i_evers".* FROM "never_have_i_evers" WHERE "never_have_i_evers"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 18ms (Views: 0.6ms | ActiveRecord: 6.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-03-06 09:24:32 -0500
+Started GET "/" for 127.0.0.1 at 2017-03-06 09:24:32 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (3.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (3.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (7.7ms)
+  Rendered welcome/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 903ms (Views: 899.3ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 904ms (Views: 902.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/never_have_i_ever" for 127.0.0.1 at 2017-03-06 09:25:20 -0500
+Processing by NeverHaveIEverController#random_NHIE as JSON
+  Parameters: {"never_have_i_ever"=>{}}
+  [1m[36mNeverHaveIEver Load (2.3ms)[0m  [1m[34mSELECT "never_have_i_evers".* FROM "never_have_i_evers"[0m
+  [1m[36mNeverHaveIEver Load (0.4ms)[0m  [1m[34mSELECT  "never_have_i_evers".* FROM "never_have_i_evers" WHERE "never_have_i_evers"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+Completed 200 OK in 24ms (Views: 0.7ms | ActiveRecord: 17.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-03-06 09:26:18 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 43ms (Views: 41.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-03-06 09:27:22 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 1616ms (Views: 1614.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-03-06 09:27:28 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 84ms (Views: 82.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-03-06 09:27:35 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 938ms (Views: 935.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/truth_dare" for 127.0.0.1 at 2017-03-06 09:27:36 -0500
+Processing by TruthDareController#random_td as JSON
+  Parameters: {"truth_dare"=>{}}
+  [1m[36mTruth Load (3.3ms)[0m  [1m[34mSELECT "truths".* FROM "truths"[0m
+  [1m[36mDare Load (0.7ms)[0m  [1m[34mSELECT "dares".* FROM "dares"[0m
+  [1m[36mTruth Load (0.3ms)[0m  [1m[34mSELECT  "truths".* FROM "truths" WHERE "truths"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mDare Load (0.3ms)[0m  [1m[34mSELECT  "dares".* FROM "dares" WHERE "dares"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 50ms (Views: 0.8ms | ActiveRecord: 18.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-03-06 09:27:49 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 213ms (Views: 211.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/truth_dare" for 127.0.0.1 at 2017-03-06 09:27:57 -0500
+Processing by TruthDareController#random_td as JSON
+  Parameters: {"truth_dare"=>{}}
+  [1m[36mTruth Load (0.3ms)[0m  [1m[34mSELECT "truths".* FROM "truths"[0m
+  [1m[36mDare Load (0.3ms)[0m  [1m[34mSELECT "dares".* FROM "dares"[0m
+  [1m[36mTruth Load (0.3ms)[0m  [1m[34mSELECT  "truths".* FROM "truths" WHERE "truths"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mDare Load (0.3ms)[0m  [1m[34mSELECT  "dares".* FROM "dares" WHERE "dares"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 19ms (Views: 0.9ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-03-06 09:28:11 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 88ms (Views: 85.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/truth_dare" for 127.0.0.1 at 2017-03-06 09:28:19 -0500
+Processing by TruthDareController#random_td as JSON
+  Parameters: {"truth_dare"=>{}}
+  [1m[36mTruth Load (0.6ms)[0m  [1m[34mSELECT "truths".* FROM "truths"[0m
+  [1m[36mDare Load (0.8ms)[0m  [1m[34mSELECT "dares".* FROM "dares"[0m
+  [1m[36mTruth Load (0.2ms)[0m  [1m[34mSELECT  "truths".* FROM "truths" WHERE "truths"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mDare Load (0.2ms)[0m  [1m[34mSELECT  "dares".* FROM "dares" WHERE "dares"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+Completed 200 OK in 7ms (Views: 1.0ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-03-07 12:20:00 -0500
+Started GET "/" for 127.0.0.1 at 2017-03-07 12:20:00 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (3.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (3.8ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (7.5ms)
+  Rendered welcome/index.html.erb within layouts/application (6.9ms)
+Completed 500 Internal Server Error in 2155ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (SyntaxError: unknown: Unexpected token (63:4)
+  61 |       this.props.gameHandler(null)
+  62 |     }.bind(this), 3000);
+> 63 |    })
+     |     ^
+  64 | 
+  65 | 
+  66 | ):
+Completed 500 Internal Server Error in 2160ms (ActiveRecord: 0.0ms)
+
+
+    4:     <title>A</title>
+    5:     <%= csrf_meta_tags %>
+    6: 
+    7:     <%= stylesheet_link_tag    'application', media: 'all' %>
+    8:     <%= javascript_include_tag 'application' %>
+    9:     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+   10:   </head>
+  
+  
+ActionView::Template::Error (SyntaxError: unknown: Unexpected token (63:4)
+  61 |       this.props.gameHandler(null)
+  62 |     }.bind(this), 3000);
+> 63 |    })
+     |     ^
+  64 | 
+  65 | 
+  66 | ):
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb___2718859186055543584_70148039168360'
+    4:     <title>A</title>
+    5:     <%= csrf_meta_tags %>
+    6: 
+    7:     <%= stylesheet_link_tag    'application', media: 'all' %>
+    8:     <%= javascript_include_tag 'application' %>
+    9:     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+   10:   </head>
+  
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb___2718859186055543584_70148039168360'
+  Rendering /Users/paulduca/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/paulduca/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/paulduca/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendering /Users/paulduca/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/paulduca/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.0ms)
+  Rendered /Users/paulduca/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.7ms)
+  Rendering /Users/paulduca/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendering /Users/paulduca/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/paulduca/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /Users/paulduca/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendering /Users/paulduca/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendering /Users/paulduca/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/paulduca/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/paulduca/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/paulduca/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (130.5ms)
+  Rendered /Users/paulduca/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (152.4ms)
+Started GET "/" for 127.0.0.1 at 2017-03-07 12:20:43 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 1308ms (Views: 1306.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/truth_dare" for 127.0.0.1 at 2017-03-07 12:21:13 -0500
+Processing by TruthDareController#random_td as JSON
+  Parameters: {"truth_dare"=>{}}
+  [1m[36mTruth Load (2.4ms)[0m  [1m[34mSELECT "truths".* FROM "truths"[0m
+  [1m[36mDare Load (0.5ms)[0m  [1m[34mSELECT "dares".* FROM "dares"[0m
+  [1m[36mTruth Load (0.4ms)[0m  [1m[34mSELECT  "truths".* FROM "truths" WHERE "truths"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mDare Load (0.2ms)[0m  [1m[34mSELECT  "dares".* FROM "dares" WHERE "dares"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+Completed 200 OK in 43ms (Views: 0.8ms | ActiveRecord: 17.6ms)
+
+
+Started GET "/truth_dare" for 127.0.0.1 at 2017-03-07 12:21:31 -0500
+Processing by TruthDareController#random_td as JSON
+  Parameters: {"truth_dare"=>{}}
+  [1m[36mTruth Load (0.7ms)[0m  [1m[34mSELECT "truths".* FROM "truths"[0m
+  [1m[36mDare Load (0.6ms)[0m  [1m[34mSELECT "dares".* FROM "dares"[0m
+  [1m[36mTruth Load (0.5ms)[0m  [1m[34mSELECT  "truths".* FROM "truths" WHERE "truths"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mDare Load (0.9ms)[0m  [1m[34mSELECT  "dares".* FROM "dares" WHERE "dares"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+Completed 200 OK in 9ms (Views: 0.8ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-03-07 12:22:51 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 2871ms (Views: 2869.0ms | ActiveRecord: 0.0ms)
+
+
