@@ -49,6 +49,7 @@ class Trivia extends React.Component {
     }else{
       var text = "You, suck!!!"
     };
+
     this.setState({
       result: text
     });

@@ -48,13 +48,19 @@ class TruthDare extends React.Component {
     this.setState({
       playing_truth: true
     })
+    setTimeout(function(){
+      this.props.gameHandler(null)
+    }.bind(this), 3000);
   }
 
   showDare(){
     this.setState({
       playing_dare: true
     })
-  }
+    setTimeout(function(){
+      this.props.gameHandler(null)
+    }.bind(this), 3000);
+   }
 
   render(){
     let playing_dare = this.state.playing_dare
