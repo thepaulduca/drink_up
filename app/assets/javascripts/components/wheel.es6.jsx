@@ -38,7 +38,7 @@ constructor(props) {
 
     let games = [
       {
-        gameName: "NeverHaveIEver",
+        gameName: "Trivia",
         gameIcon: "fa fa-lightbulb-o"
       },
       {
@@ -46,7 +46,7 @@ constructor(props) {
         gameIcon: "fa fa-star-o"
       },
       {
-        gameName: "WouldURather",
+        gameName: "TruthDare",
         gameIcon: "fa fa-heart-o"
       },
       {
@@ -54,11 +54,11 @@ constructor(props) {
         gameIcon: "fa fa-heart-o"
       },
       {
-        gameName: "WouldURather",
+        gameName: "TruthDare",
         gameIcon: "fa fa-star-o"
       },
       {
-        gameName: "WouldURather",
+        gameName: "Trivia",
         gameIcon: "fa fa-lightbulb-o"
       }
     ]
