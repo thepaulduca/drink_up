@@ -1,0 +1,2 @@
+module WouldURatherHelper
+end

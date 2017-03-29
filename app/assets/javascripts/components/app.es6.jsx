@@ -15,16 +15,29 @@ class App extends React.Component {
   render(){
     let activeGame = this.state.activeGame
     if(activeGame){
-      return(
+      if(activeGame === "Trivia"){
+        return(
+        <Trivia game={activeGame} gameHandler={this.activeGameHandler.bind(this)}/>
+        )
+      } else if (activeGame === 'TruthDare') {
+        return(
         <TruthDare game={activeGame} gameHandler={this.activeGameHandler.bind(this)}/>
-      )
-    } else {
+        )
+      } else if (activeGame === 'NeverHaveIEver') {
+        return(
+        <NeverHaveIEver game={activeGame} gameHandler={this.activeGameHandler.bind(this)}/>
+        )
+      } else if (activeGame == 'WouldURather') {
+        return(
+          <WouldURather game={activeGame} gameHandler={this.activeGameHandler.bind(this)}/>
+        )
+      }
+    }
       return(
         <div id="wrapper">
           <Wheel gameHandler={this.activeGameHandler.bind(this)}/>
           <div id="txt"></div>
-        </div>
+      </div>
       )
-    }
   }
 }

@@ -38,27 +38,27 @@ constructor(props) {
 
     let games = [
       {
-        gameName: "Hot or Not",
-        gameIcon: "fa fa-bell-o"
+        gameName: "NeverHaveIEver",
+        gameIcon: "fa fa-lightbulb-o"
       },
       {
-        gameName: "Truth or Dare",
-        gameIcon: "fa fa-comment-o"
-      },
-      {
-        gameName: "Never have I ever",
-        gameIcon: "fa fa-smile-o"
-      },
-      {
-        gameName: "Trivia",
-        gameIcon: "fa fa-heart-o"
-      },
-      {
-        gameName: "Some more stuff",
+        gameName: "NeverHaveIEver",
         gameIcon: "fa fa-star-o"
       },
       {
-        gameName: "Go directly to jail, do NOT pass go",
+        gameName: "WouldURather",
+        gameIcon: "fa fa-heart-o"
+      },
+      {
+        gameName: "WouldURather",
+        gameIcon: "fa fa-heart-o"
+      },
+      {
+        gameName: "WouldURather",
+        gameIcon: "fa fa-star-o"
+      },
+      {
+        gameName: "WouldURather",
         gameIcon: "fa fa-lightbulb-o"
       }
     ]
