@@ -42,23 +42,23 @@ constructor(props) {
         gameIcon: "fa fa-lightbulb-o"
       },
       {
-        gameName: "TruthDare",
-        gameIcon: "fa fa-star-o"
-      },
-      {
-        gameName: "Trivia",
-        gameIcon: "fa fa-heart-o"
-      },
-      {
-        gameName: "Trivia",
-        gameIcon: "fa fa-heart-o"
-      },
-      {
-        gameName: "TruthDare",
-        gameIcon: "fa fa-star-o"
-      },
-      {
         gameName: "NeverHaveIEver",
+        gameIcon: "fa fa-star-o"
+      },
+      {
+        gameName: "WouldURather",
+        gameIcon: "fa fa-heart-o"
+      },
+      {
+        gameName: "WouldURather",
+        gameIcon: "fa fa-heart-o"
+      },
+      {
+        gameName: "WouldURather",
+        gameIcon: "fa fa-star-o"
+      },
+      {
+        gameName: "WouldURather",
         gameIcon: "fa fa-lightbulb-o"
       }
     ]

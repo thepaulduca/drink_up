@@ -27,13 +27,17 @@ class App extends React.Component {
         return(
         <NeverHaveIEver game={activeGame} gameHandler={this.activeGameHandler.bind(this)}/>
         )
+      } else if (activeGame == 'WouldURather') {
+        return(
+          <WouldURather game={activeGame} gameHandler={this.activeGameHandler.bind(this)}/>
+        )
       }
+    }
       return(
         <div id="wrapper">
           <Wheel gameHandler={this.activeGameHandler.bind(this)}/>
           <div id="txt"></div>
-        </div>
+      </div>
       )
-    }
   }
 }

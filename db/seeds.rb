@@ -41,3 +41,13 @@ Dare.create(content: "Text your ex - 'Sorry not sorry'")
 Dare.create(content: "Post a video on social media of you dancing to a Paris Hilton song")
 Dare.create(content: "Dance with the closest person to you of the oppiste sex for 2 mins")
 Dare.create(content: "Call a Chinnese restaurant and ask 8 different questions")
+
+
+NeverHaveIEver.create(content: "Had a Threeway")
+NeverHaveIEver.create(content: "Had a Wet Dream")
+NeverHaveIEver.create(content: "Gotten a speeding ticket")
+NeverHaveIEver.create(content: "Gotten Arrested")
+
+WouldURather.create(choice1: "Show up to school/work naked", choice2: "Take a sip of a random persons pee")
+WouldURather.create(choice1: "Sleep with Donald Trump", choice2: "Walk a mile barefoot through glass")
+WouldURather.create(choice1: "Live on an island all alone with plenty of food and water but no other people and you can't leave - easy conditions overall", choice2: "Live in a dessert with family and community but hae limited food and water - tough conditions overall")

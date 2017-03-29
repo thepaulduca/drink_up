@@ -1,0 +1,2 @@
+class WouldURather < ApplicationRecord
+end
