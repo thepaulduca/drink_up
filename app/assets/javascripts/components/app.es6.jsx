@@ -35,6 +35,7 @@ class App extends React.Component {
     }
       return(
         <div id="wrapper">
+          <h1 className="center">Drink Up</h1>
           <Wheel gameHandler={this.activeGameHandler.bind(this)}/>
           <div id="txt"></div>
       </div>

@@ -80,11 +80,12 @@ class TruthDare extends React.Component {
     } else {
       return(
         <div className="container">
+          <h2>Truth or dare?</h2>
           <div className="Wrapper">
-            <button onClick={this.showTruth}>Truth</button>
+            <button className="truth_dare_button" onClick={this.showTruth}>Truth</button>
           </div>
           <div className="wrapper">
-            <button onClick={this.showDare}>Dare</button>
+            <button className="truth_dare_button" onClick={this.showDare}>Dare</button>
           </div>
         </div>
       )

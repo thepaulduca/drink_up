@@ -40,14 +40,17 @@ class WouldURather extends React.Component {
     })
       setTimeout(function(){
         this.props.gameHandler(null)
-      }.bind(this), 4000);
+      }.bind(this), 5500);
     }
 
   render(){
       return(
         <div className='container'>
-          <h1>{this.state.choice1}</h1>
-          <h1>{this.state.choice2}</h1>
+          <h2 className="center">Would you rather</h2>
+          <h3 className="center">{this.state.choice1}</h3>
+          <h2 className="center">Or</h2>
+          <h3 className="center">{this.state.choice2}</h3>
+          <h2 className="center">?</h2>
         </div>
       )
   }

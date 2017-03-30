@@ -1,5 +1,4 @@
 button {
-  margin: 100px;
   width: 100px;
   height: 70px;
   position: absolute;
@@ -7,4 +6,9 @@ button {
 
 .wrapper {
     text-align: center;
+}
+
+.truth_dare_button {
+  border-radius: 5px;
+  background-color: grey;
 }
