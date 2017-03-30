@@ -39,23 +39,23 @@ constructor(props) {
     let games = [
       {
         gameName: "Trivia",
-        gameIcon: "fa fa-lightbulb-o"
+        gameIcon: "fa fa-question-circle"
       },
       {
         gameName: "NeverHaveIEver",
-        gameIcon: "fa fa-star-o"
+        gameIcon: "fa fa-times"
       },
       {
         gameName: "TruthDare",
-        gameIcon: "fa fa-heart-o"
+        gameIcon: "fa fa-bomb"
       },
       {
         gameName: "WouldURather",
-        gameIcon: "fa fa-heart-o"
+        gameIcon: "fa fa-arrows-v"
       },
       {
         gameName: "TruthDare",
-        gameIcon: "fa fa-star-o"
+        gameIcon: "fa fa-star-half-o"
       },
       {
         gameName: "Trivia",

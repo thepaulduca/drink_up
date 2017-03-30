@@ -4862,3 +4862,361 @@ Processing by WouldURatherController#random_would_u_return as JSON
 Completed 200 OK in 23ms (Views: 0.2ms | ActiveRecord: 6.1ms)
 
 
+Started GET "/" for 127.0.0.1 at 2017-03-30 10:46:43 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (3.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 2357ms (Views: 2355.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/truth_dare" for 127.0.0.1 at 2017-03-30 10:46:53 -0400
+Processing by TruthDareController#random_td as JSON
+  Parameters: {"truth_dare"=>{}}
+  [1m[36mTruth Load (6.8ms)[0m  [1m[34mSELECT "truths".* FROM "truths"[0m
+  [1m[36mDare Load (0.8ms)[0m  [1m[34mSELECT "dares".* FROM "dares"[0m
+  [1m[36mTruth Load (1.6ms)[0m  [1m[34mSELECT  "truths".* FROM "truths" WHERE "truths"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mDare Load (0.2ms)[0m  [1m[34mSELECT  "dares".* FROM "dares" WHERE "dares"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+Completed 200 OK in 82ms (Views: 1.2ms | ActiveRecord: 40.4ms)
+
+
+Started GET "/would_u_rather" for 127.0.0.1 at 2017-03-30 10:47:05 -0400
+Processing by WouldURatherController#random_would_u_return as JSON
+  Parameters: {"would_u_rather"=>{}}
+  [1m[36mWouldURather Load (0.5ms)[0m  [1m[34mSELECT "would_u_rathers".* FROM "would_u_rathers"[0m
+  [1m[36mWouldURather Load (0.3ms)[0m  [1m[34mSELECT  "would_u_rathers".* FROM "would_u_rathers" WHERE "would_u_rathers"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+Completed 200 OK in 10ms (Views: 0.3ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/trivia_question" for 127.0.0.1 at 2017-03-30 10:47:19 -0400
+Processing by TriviaQuestionController#random_trivia_question as JSON
+  Parameters: {"trivia_question"=>{}}
+  [1m[36mTriviaQuestion Load (0.6ms)[0m  [1m[34mSELECT "trivia_questions".* FROM "trivia_questions"[0m
+  [1m[36mTriviaQuestion Load (0.3ms)[0m  [1m[34mSELECT  "trivia_questions".* FROM "trivia_questions" WHERE "trivia_questions"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mTriviaAnswer Load (0.4ms)[0m  [1m[34mSELECT  "trivia_answers".* FROM "trivia_answers" WHERE "trivia_answers"."trivia_question_id" = $1 LIMIT $2[0m  [["trivia_question_id", 2], ["LIMIT", 1]]
+  [1m[36mTriviaAnswer Load (0.2ms)[0m  [1m[34mSELECT "trivia_answers".* FROM "trivia_answers" WHERE "trivia_answers"."trivia_question_id" = $1[0m  [["trivia_question_id", 2]]
+Completed 200 OK in 68ms (Views: 3.3ms | ActiveRecord: 7.7ms)
+
+
+Started GET "/trivia_question" for 127.0.0.1 at 2017-03-30 10:47:38 -0400
+Processing by TriviaQuestionController#random_trivia_question as JSON
+  Parameters: {"trivia_question"=>{}}
+  [1m[36mTriviaQuestion Load (0.8ms)[0m  [1m[34mSELECT "trivia_questions".* FROM "trivia_questions"[0m
+  [1m[36mTriviaQuestion Load (0.7ms)[0m  [1m[34mSELECT  "trivia_questions".* FROM "trivia_questions" WHERE "trivia_questions"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTriviaAnswer Load (0.4ms)[0m  [1m[34mSELECT  "trivia_answers".* FROM "trivia_answers" WHERE "trivia_answers"."trivia_question_id" = $1 LIMIT $2[0m  [["trivia_question_id", 3], ["LIMIT", 1]]
+  [1m[36mTriviaAnswer Load (0.3ms)[0m  [1m[34mSELECT "trivia_answers".* FROM "trivia_answers" WHERE "trivia_answers"."trivia_question_id" = $1[0m  [["trivia_question_id", 3]]
+Completed 200 OK in 13ms (Views: 2.8ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/trivia_question" for 127.0.0.1 at 2017-03-30 10:48:17 -0400
+Processing by TriviaQuestionController#random_trivia_question as JSON
+  Parameters: {"trivia_question"=>{}}
+  [1m[36mTriviaQuestion Load (0.3ms)[0m  [1m[34mSELECT "trivia_questions".* FROM "trivia_questions"[0m
+  [1m[36mTriviaQuestion Load (0.3ms)[0m  [1m[34mSELECT  "trivia_questions".* FROM "trivia_questions" WHERE "trivia_questions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTriviaAnswer Load (0.4ms)[0m  [1m[34mSELECT  "trivia_answers".* FROM "trivia_answers" WHERE "trivia_answers"."trivia_question_id" = $1 LIMIT $2[0m  [["trivia_question_id", 1], ["LIMIT", 1]]
+  [1m[36mTriviaAnswer Load (0.3ms)[0m  [1m[34mSELECT "trivia_answers".* FROM "trivia_answers" WHERE "trivia_answers"."trivia_question_id" = $1[0m  [["trivia_question_id", 1]]
+Completed 200 OK in 8ms (Views: 2.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/would_u_rather" for 127.0.0.1 at 2017-03-30 10:57:05 -0400
+Processing by WouldURatherController#random_would_u_return as JSON
+  Parameters: {"would_u_rather"=>{}}
+  [1m[36mWouldURather Load (0.7ms)[0m  [1m[34mSELECT "would_u_rathers".* FROM "would_u_rathers"[0m
+  [1m[36mWouldURather Load (0.6ms)[0m  [1m[34mSELECT  "would_u_rathers".* FROM "would_u_rathers" WHERE "would_u_rathers"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+Completed 200 OK in 19ms (Views: 2.5ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/would_u_rather" for 127.0.0.1 at 2017-03-30 10:57:21 -0400
+Processing by WouldURatherController#random_would_u_return as JSON
+  Parameters: {"would_u_rather"=>{}}
+  [1m[36mWouldURather Load (0.3ms)[0m  [1m[34mSELECT "would_u_rathers".* FROM "would_u_rathers"[0m
+  [1m[36mWouldURather Load (0.3ms)[0m  [1m[34mSELECT  "would_u_rathers".* FROM "would_u_rathers" WHERE "would_u_rathers"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+Completed 200 OK in 4ms (Views: 0.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/would_u_rather" for 127.0.0.1 at 2017-03-30 10:57:32 -0400
+Processing by WouldURatherController#random_would_u_return as JSON
+  Parameters: {"would_u_rather"=>{}}
+  [1m[36mWouldURather Load (0.3ms)[0m  [1m[34mSELECT "would_u_rathers".* FROM "would_u_rathers"[0m
+  [1m[36mWouldURather Load (0.3ms)[0m  [1m[34mSELECT  "would_u_rathers".* FROM "would_u_rathers" WHERE "would_u_rathers"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+Completed 200 OK in 4ms (Views: 0.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-03-30 12:12:07 -0400
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 440ms (Views: 437.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-03-30 12:12:07 -0400
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 109ms (Views: 107.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/truth_dare" for 127.0.0.1 at 2017-03-30 12:12:16 -0400
+Processing by TruthDareController#random_td as JSON
+  Parameters: {"truth_dare"=>{}}
+  [1m[36mTruth Load (0.5ms)[0m  [1m[34mSELECT "truths".* FROM "truths"[0m
+  [1m[36mDare Load (0.5ms)[0m  [1m[34mSELECT "dares".* FROM "dares"[0m
+  [1m[36mTruth Load (0.5ms)[0m  [1m[34mSELECT  "truths".* FROM "truths" WHERE "truths"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mDare Load (0.3ms)[0m  [1m[34mSELECT  "dares".* FROM "dares" WHERE "dares"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+Completed 200 OK in 6ms (Views: 1.2ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-03-30 12:13:20 -0400
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 105ms (Views: 102.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/truth_dare" for 127.0.0.1 at 2017-03-30 12:13:27 -0400
+Processing by TruthDareController#random_td as JSON
+  Parameters: {"truth_dare"=>{}}
+  [1m[36mTruth Load (0.6ms)[0m  [1m[34mSELECT "truths".* FROM "truths"[0m
+  [1m[36mDare Load (0.4ms)[0m  [1m[34mSELECT "dares".* FROM "dares"[0m
+  [1m[36mTruth Load (0.6ms)[0m  [1m[34mSELECT  "truths".* FROM "truths" WHERE "truths"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mDare Load (0.4ms)[0m  [1m[34mSELECT  "dares".* FROM "dares" WHERE "dares"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+Completed 200 OK in 7ms (Views: 0.9ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/never_have_i_ever" for 127.0.0.1 at 2017-03-30 12:22:01 -0400
+Processing by NeverHaveIEverController#random_NHIE as JSON
+  Parameters: {"never_have_i_ever"=>{}}
+  [1m[36mNeverHaveIEver Load (2.6ms)[0m  [1m[34mSELECT "never_have_i_evers".* FROM "never_have_i_evers"[0m
+  [1m[36mNeverHaveIEver Load (0.2ms)[0m  [1m[34mSELECT  "never_have_i_evers".* FROM "never_have_i_evers" WHERE "never_have_i_evers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 12ms (Views: 0.8ms | ActiveRecord: 8.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-03-30 12:25:58 -0400
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 1182ms (Views: 1180.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-03-30 12:26:15 -0400
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 1004ms (Views: 1002.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-03-30 12:26:27 -0400
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 934ms (Views: 932.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-03-30 12:41:26 -0400
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 235ms (Views: 229.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-03-30 12:41:57 -0400
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 1131ms (Views: 1128.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-03-30 12:42:20 -0400
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 958ms (Views: 956.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-03-30 12:42:22 -0400
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 55ms (Views: 54.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-03-30 12:42:28 -0400
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 992ms (Views: 990.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-03-30 12:43:59 -0400
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 106ms (Views: 103.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-03-30 12:44:24 -0400
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 1101ms (Views: 1099.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-03-30 12:44:46 -0400
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 971ms (Views: 968.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-03-30 12:45:39 -0400
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 1178ms (Views: 1176.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-03-30 12:49:09 -0400
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 1078ms (Views: 1076.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-03-30 12:49:35 -0400
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 1062ms (Views: 1060.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-03-30 12:59:24 -0400
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 1122ms (Views: 1119.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-03-30 12:59:58 -0400
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 979ms (Views: 977.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/never_have_i_ever" for 127.0.0.1 at 2017-03-30 13:00:09 -0400
+Processing by NeverHaveIEverController#random_NHIE as JSON
+  Parameters: {"never_have_i_ever"=>{}}
+  [1m[36mNeverHaveIEver Load (0.4ms)[0m  [1m[34mSELECT "never_have_i_evers".* FROM "never_have_i_evers"[0m
+  [1m[36mNeverHaveIEver Load (0.3ms)[0m  [1m[34mSELECT  "never_have_i_evers".* FROM "never_have_i_evers" WHERE "never_have_i_evers"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+Completed 200 OK in 12ms (Views: 0.9ms | ActiveRecord: 7.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-03-30 13:01:54 -0400
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 1339ms (Views: 1336.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/truth_dare" for 127.0.0.1 at 2017-03-30 13:02:02 -0400
+Processing by TruthDareController#random_td as JSON
+  Parameters: {"truth_dare"=>{}}
+  [1m[36mTruth Load (0.9ms)[0m  [1m[34mSELECT "truths".* FROM "truths"[0m
+  [1m[36mDare Load (0.4ms)[0m  [1m[34mSELECT "dares".* FROM "dares"[0m
+  [1m[36mTruth Load (0.3ms)[0m  [1m[34mSELECT  "truths".* FROM "truths" WHERE "truths"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mDare Load (0.5ms)[0m  [1m[34mSELECT  "dares".* FROM "dares" WHERE "dares"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 36ms (Views: 1.0ms | ActiveRecord: 11.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-03-30 13:02:32 -0400
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 73ms (Views: 71.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/would_u_rather" for 127.0.0.1 at 2017-03-30 13:02:39 -0400
+Processing by WouldURatherController#random_would_u_return as JSON
+  Parameters: {"would_u_rather"=>{}}
+  [1m[36mWouldURather Load (0.4ms)[0m  [1m[34mSELECT "would_u_rathers".* FROM "would_u_rathers"[0m
+  [1m[36mWouldURather Load (0.2ms)[0m  [1m[34mSELECT  "would_u_rathers".* FROM "would_u_rathers" WHERE "would_u_rathers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 11ms (Views: 0.3ms | ActiveRecord: 8.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-03-30 13:05:19 -0400
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 2381ms (Views: 2378.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/truth_dare" for 127.0.0.1 at 2017-03-30 13:05:29 -0400
+Processing by TruthDareController#random_td as JSON
+  Parameters: {"truth_dare"=>{}}
+  [1m[36mTruth Load (0.5ms)[0m  [1m[34mSELECT "truths".* FROM "truths"[0m
+  [1m[36mDare Load (0.5ms)[0m  [1m[34mSELECT "dares".* FROM "dares"[0m
+  [1m[36mTruth Load (0.2ms)[0m  [1m[34mSELECT  "truths".* FROM "truths" WHERE "truths"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mDare Load (0.2ms)[0m  [1m[34mSELECT  "dares".* FROM "dares" WHERE "dares"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+Completed 200 OK in 34ms (Views: 1.0ms | ActiveRecord: 8.0ms)
+
+
+Started GET "/trivia_question" for 127.0.0.1 at 2017-03-30 13:06:52 -0400
+Processing by TriviaQuestionController#random_trivia_question as JSON
+  Parameters: {"trivia_question"=>{}}
+  [1m[36mTriviaQuestion Load (0.4ms)[0m  [1m[34mSELECT "trivia_questions".* FROM "trivia_questions"[0m
+  [1m[36mTriviaQuestion Load (0.4ms)[0m  [1m[34mSELECT  "trivia_questions".* FROM "trivia_questions" WHERE "trivia_questions"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTriviaAnswer Load (0.3ms)[0m  [1m[34mSELECT  "trivia_answers".* FROM "trivia_answers" WHERE "trivia_answers"."trivia_question_id" = $1 LIMIT $2[0m  [["trivia_question_id", 3], ["LIMIT", 1]]
+  [1m[36mTriviaAnswer Load (0.3ms)[0m  [1m[34mSELECT "trivia_answers".* FROM "trivia_answers" WHERE "trivia_answers"."trivia_question_id" = $1[0m  [["trivia_question_id", 3]]
+Completed 200 OK in 35ms (Views: 3.9ms | ActiveRecord: 8.9ms)
+
+
+Started GET "/never_have_i_ever" for 127.0.0.1 at 2017-03-30 13:07:05 -0400
+Processing by NeverHaveIEverController#random_NHIE as JSON
+  Parameters: {"never_have_i_ever"=>{}}
+  [1m[36mNeverHaveIEver Load (0.8ms)[0m  [1m[34mSELECT "never_have_i_evers".* FROM "never_have_i_evers"[0m
+  [1m[36mNeverHaveIEver Load (0.4ms)[0m  [1m[34mSELECT  "never_have_i_evers".* FROM "never_have_i_evers" WHERE "never_have_i_evers"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+Completed 200 OK in 13ms (Views: 1.2ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-03-30 13:07:48 -0400
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 2021ms (Views: 2019.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/trivia_question" for 127.0.0.1 at 2017-03-30 13:08:02 -0400
+Processing by TriviaQuestionController#random_trivia_question as JSON
+  Parameters: {"trivia_question"=>{}}
+  [1m[36mTriviaQuestion Load (0.3ms)[0m  [1m[34mSELECT "trivia_questions".* FROM "trivia_questions"[0m
+  [1m[36mTriviaQuestion Load (0.3ms)[0m  [1m[34mSELECT  "trivia_questions".* FROM "trivia_questions" WHERE "trivia_questions"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTriviaAnswer Load (0.3ms)[0m  [1m[34mSELECT  "trivia_answers".* FROM "trivia_answers" WHERE "trivia_answers"."trivia_question_id" = $1 LIMIT $2[0m  [["trivia_question_id", 3], ["LIMIT", 1]]
+  [1m[36mTriviaAnswer Load (0.3ms)[0m  [1m[34mSELECT "trivia_answers".* FROM "trivia_answers" WHERE "trivia_answers"."trivia_question_id" = $1[0m  [["trivia_question_id", 3]]
+Completed 200 OK in 27ms (Views: 2.8ms | ActiveRecord: 8.6ms)
+
+
+Started GET "/would_u_rather" for 127.0.0.1 at 2017-03-30 13:08:15 -0400
+Processing by WouldURatherController#random_would_u_return as JSON
+  Parameters: {"would_u_rather"=>{}}
+  [1m[36mWouldURather Load (0.3ms)[0m  [1m[34mSELECT "would_u_rathers".* FROM "would_u_rathers"[0m
+  [1m[36mWouldURather Load (0.3ms)[0m  [1m[34mSELECT  "would_u_rathers".* FROM "would_u_rathers" WHERE "would_u_rathers"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+Completed 200 OK in 6ms (Views: 0.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/truth_dare" for 127.0.0.1 at 2017-03-30 13:09:07 -0400
+Processing by TruthDareController#random_td as JSON
+  Parameters: {"truth_dare"=>{}}
+  [1m[36mTruth Load (0.3ms)[0m  [1m[34mSELECT "truths".* FROM "truths"[0m
+  [1m[36mDare Load (0.3ms)[0m  [1m[34mSELECT "dares".* FROM "dares"[0m
+  [1m[36mTruth Load (0.3ms)[0m  [1m[34mSELECT  "truths".* FROM "truths" WHERE "truths"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mDare Load (0.4ms)[0m  [1m[34mSELECT  "dares".* FROM "dares" WHERE "dares"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+Completed 200 OK in 24ms (Views: 0.7ms | ActiveRecord: 7.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-03-30 13:09:56 -0400
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 1864ms (Views: 1862.4ms | ActiveRecord: 0.0ms)
+
+
