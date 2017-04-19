@@ -46,7 +46,7 @@ constructor(props) {
         gameIcon: "fa fa-times"
       },
       {
-        gameName: "TruthDare",
+        gameName: "WildCard",
         gameIcon: "fa fa-bomb"
       },
       {

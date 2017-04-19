@@ -31,6 +31,10 @@ class App extends React.Component {
         return(
           <WouldURather game={activeGame} gameHandler={this.activeGameHandler.bind(this)}/>
         )
+      } else if (activeGame == "WildCard") {
+        return(
+          <WildCard game={activeGame} gameHandler={this.activeGameHandler.bind(this)}/>
+        )
       }
     }
       return(

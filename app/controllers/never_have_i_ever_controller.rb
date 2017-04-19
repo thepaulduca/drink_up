@@ -5,6 +5,4 @@ class NeverHaveIEverController < ApplicationController
     render :json => {never_have_i_ever: random_NHIE}
   end
 
-  
-
 end
