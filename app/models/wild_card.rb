@@ -1,0 +1,2 @@
+class WildCard < ApplicationRecord
+end

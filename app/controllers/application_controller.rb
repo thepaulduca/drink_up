@@ -19,8 +19,13 @@ class ApplicationController < ActionController::Base
   end
 
   def find_random_NHIE
-    nhie_id = nhie_id = rand(1..NeverHaveIEver.all.length)
+    nhie_id = rand(1..NeverHaveIEver.all.length)
     nhie = NeverHaveIEver.find(nhie_id)
+  end
+
+  def random_wild_card
+    id = rand(1..WildCard.all.length)
+    wilcard = WildCard.find(id)
   end
 
 end

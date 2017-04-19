@@ -51,3 +51,8 @@ NeverHaveIEver.create(content: "Gotten Arrested")
 WouldURather.create(choice1: "Show up to school/work naked", choice2: "Take a sip of a random persons pee")
 WouldURather.create(choice1: "Sleep with Donald Trump", choice2: "Walk a mile barefoot through glass")
 WouldURather.create(choice1: "Live on an island all alone with plenty of food and water but no other people and you can't leave - easy conditions overall", choice2: "Live in a dessert with family and community but hae limited food and water - tough conditions overall")
+
+WildCard.create(content: "Everybody DRINK!")
+WildCard.create(content: "Everyone 5'10 and taller DRINK!")
+WildCard.create(content: "Anyone who is still a virgin DRINK!")
+WildCard.create(content: "Everyone with brown hair DRINK!")

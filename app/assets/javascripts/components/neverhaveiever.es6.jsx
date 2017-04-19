@@ -11,7 +11,7 @@ class NeverHaveIEver extends React.Component {
   }
 
   getHaveIEver(){
-    var csrfToken = document.querySelectorAll('[name="csrf-token"]')[0].getAttribute("content");
+    var csrfToken = document.querySelectorAll('meta[name="csrf-token"]')[0].getAttribute("content");
 
     return fetch('/never_have_i_ever', {
       method: 'GET',
@@ -43,8 +43,8 @@ class NeverHaveIEver extends React.Component {
   render(){
     return(
       <div className="container">
-        <h1>Never Have I ever </h1>
-        <h2 className="center">{this.state.haveIEver}</h2>
+        <h1>Never Have I Ever:</h1>
+        <h2>{this.state.haveIEver}</h2>
       </div>
     )
   }
