@@ -68,20 +68,20 @@ class TruthDare extends React.Component {
     if(playing_dare){
       return(
         <div className="wrapper">
-          <h3>{this.state.dare}</h3>
+          <h3 className="gameheader">{this.state.dare}</h3>
         </div>
       )
     } else if (playing_truth) {
       return(
         <div className="wrapper">
-          <h3>{this.state.truth}</h3>
+          <h3 className="gameheader">{this.state.truth}</h3>
         </div>
         )
     } else {
       return(
         <div className="container">
-          <h2>Truth or dare?</h2>
-          <div className="Wrapper">
+          <h2 className="gameheader">Truth or dare?</h2>
+          <div className="wrapper">
             <button className="truth_dare_button" onClick={this.showTruth}>Truth</button>
           </div>
           <div className="wrapper">

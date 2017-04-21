@@ -13,7 +13,7 @@ class App extends React.Component {
   }
 
   render(){
-    let activeGame = this.state.activeGame
+    let activeGame = this.state.activeGame;
     if(activeGame){
       if(activeGame === "Trivia"){
         return(
