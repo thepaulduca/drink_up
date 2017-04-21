@@ -31,13 +31,16 @@ class WildCard extends React.Component {
     this.setState({
       card: data.card.content
     });
+    setTimeout(function(){
+      this.props.gameHandler(null)
+    }.bind(this), 4000);
   }
 
   render(){
     return(
       <div className="container">
-        <h2>Wild Card!</h2>
-        <h4>{this.state.card}</h4>
+        <h2 className="center gameheader">Wild Card!</h2>
+        <h2 classname="center gameheader">{this.state.card}</h2>
       </div>
     )
   }
