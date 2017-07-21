@@ -62,7 +62,7 @@ class Trivia extends React.Component {
   render(){
     if(this.state.result){
       return(
-        <Message text={this.state.result}/>
+        <Message className="gameheader" text={this.state.result}/>
       )
     } else {
       return(

@@ -7,7 +7,7 @@ class Choice extends React.Component {
 
   render(){
     return(
-      <div className="option" onClick={this.clickHandler.bind(this)}>
+      <div className="option trivia_answer" onClick={this.clickHandler.bind(this)}>
         {this.props.choiceText.answer}
       </div>
     )

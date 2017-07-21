@@ -47,9 +47,9 @@ class WouldURather extends React.Component {
       return(
         <div className='container'>
           <h2 className="center gameheader">Would you rather</h2>
-          <h3 className="center">{this.state.choice1}</h3>
-          <h2 className="center banner">Or</h2>
-          <h3 className="center">{this.state.choice2}</h3>
+          <h3 className="center altgameheader">{this.state.choice1}</h3>
+          <h2 className="center banner">or</h2>
+          <h3 className="center altgameheader">{this.state.choice2}</h3>
           <h2 className="center banner">?</h2>
         </div>
       )

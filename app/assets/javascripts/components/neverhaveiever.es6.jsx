@@ -44,7 +44,7 @@ class NeverHaveIEver extends React.Component {
     return(
       <div className="container">
         <h1 className="gameheader">Never Have I Ever:</h1>
-        <h2 classname="gameheader">{this.state.haveIEver}</h2>
+        <h2 classname="altgameheader">{this.state.haveIEver}</h2>
       </div>
     )
   }

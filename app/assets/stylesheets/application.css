@@ -15,7 +15,7 @@
  */
 
 html {
-  background-color: #ADD8E6;
+  background-color: #4286f4;
 }
 
 .container {
@@ -58,10 +58,10 @@ h1, h2{
   font-family: "Arial Black", Gadget, sans-serif;
   color: #D3D3D3;
   text-shadow:
-    -1px -1px 0 white,
-    1px -1px 0 white,
-    -1px 1px 0 white,
-    1px 1px 0 white;
+    -1px -1px 0 #99a3b2,
+    1px -1px 0 #99a3b2,
+    -1px 1px 0 #99a3b2,
+    1px 1px 0 #99a3b2;
   font-size: 55px;
 }
 
@@ -70,9 +70,43 @@ h1, h2{
   font-family: "Arial Black", Gadget, sans-serif;
   color: #D3D3D3;
   text-shadow:
-    -1px -1px 0 white,
-    1px -1px 0 white,
-    -1px 1px 0 white,
-    1px 1px 0 white;
+    -1px -1px 0 #99a3b2,
+    1px -1px 0 #99a3b2,
+    -1px 1px 0 #99a3b2,
+    1px 1px 0 #99a3b2;
   font-size: 40px;
+}
+
+.altgameheader {
+  font-family: "Arial Black", Gadget, sans-serif;
+  color: #4fc944;
+  text-shadow:
+    -1px -1px 0 #7c997a,
+    1px -1px 0 #7c997a,
+    -1px 1px 0 #7c997a,
+    1px 1px 0 #7c997a;
+  font-size: 35px;
+}
+
+.trivia_answer {
+  background-color: #2980b9;
+  border: none;
+  color: #d0ddf2;
+  padding: 15px 32px;
+  width: 250px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family: "Arial Black", Gadget, sans-serif;
+  margin: 4px 2px;
+  border-radius: 6px;
+  border-style: solid;
+  border-color: white;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s;
+  -moz-transform: 0.4s;
+	-o-transform: 0.4s;
+	-ms-transform: 0.4s;
+  transition-duration: 0.4s;
 }
